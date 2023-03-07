@@ -48,15 +48,15 @@ export default function SignIn() {
                                 </div>
                                 <form>
                                     <div className="flex flex-column gap-2">
-                                        <label htmlFor="full-name">Full Name</label>
+                                        <label htmlFor="full-name">Full Name <span className="text-red-600">*</span></label>
                                         <InputText id="full-name" aria-describedby="full-name-help" />
                                     </div>
                                     <div className="flex flex-column gap-2">
-                                        <label htmlFor="email">Email</label>
+                                        <label htmlFor="email">Email <span className="text-red-600">*</span></label>
                                         <InputText id="email" aria-describedby="email-help" />
                                     </div>
                                     <div className="flex flex-column gap-2">
-                                        <label htmlFor="password">Password</label>
+                                        <label htmlFor="password">Password <span className="text-red-600">*</span></label>
                                         <Password id="password" aria-describedby="password-help" toggleMask />
                                     </div>
 
