@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Home = () => {
+export default function Home() {
     return (
         <div>
             <h1>Bienvenue sur Swiss Student Location !</h1>
@@ -8,4 +6,3 @@ const Home = () => {
     );
 };
 
-export default Home;
