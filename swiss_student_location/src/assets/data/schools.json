@@ -1,0 +1,86 @@
+{
+  "EPFL": {
+    "acronym": "EPFL",
+    "full_name": "Ecole polytechnique fédérale de Lausanne",
+    "code": "1018",
+    "city": "Lausanne",
+    "canton": "VD"
+  },
+  "ETHZ": {
+    "acronym": "ETHZ",
+    "full_name": "Eidgenössische Technische Hochschule Zürich",
+    "code": "1023",
+    "city": "Zürich",
+    "canton": "ZH"
+  },
+  "UNIL": {
+    "acronym": "UNIL",
+    "full_name": "Université de Lausanne",
+    "code": "1015",
+    "city": "Lausanne",
+    "canton": "VD"
+  },
+  "UNIGE": {
+    "acronym": "UNIGE",
+    "full_name": "Université de Genève",
+    "code": "1008",
+    "city": "Genève",
+    "canton": "GE"
+  },
+  "UNIBE": {
+    "acronym": "UNIBE",
+    "full_name": "Université de Berne",
+    "code": "1009",
+    "city": "Bern",
+    "canton": "BE"
+  },
+  "UNIFR": {
+    "acronym": "UNIFR",
+    "full_name": "Université de Fribourg",
+    "code": "1011",
+    "city": "Fribourg",
+    "canton": "FR"
+  },
+  "UNISG": {
+    "acronym": "UNISG",
+    "full_name": "Universität St. Gallen",
+    "code": "1002",
+    "city": "St. Gallen",
+    "canton": "SG"
+  },
+  "UNINE": {
+    "acronym": "UNINE",
+    "full_name": "Université de Neuchâtel",
+    "code": "1012",
+    "city": "Neuchâtel",
+    "canton": "NE"
+  },
+  "USI": {
+    "acronym": "USI",
+    "full_name": "Università della Svizzera italiana",
+    "code": "1013",
+    "city": "Lugano",
+    "canton": "TI"
+  },
+  "EPFZ": {
+    "acronym": "EPFZ",
+    "full_name": "Eidgenössische Technische Hochschule Zürich",
+    "code": "1023",
+    "city": "Zürich",
+    "canton": "ZH"
+  },
+  "ZHAW": {
+    "acronym": "ZHAW",
+    "full_name": "Zürcher Hochschule für Angewandte Wissenschaften",
+    "code": "6944",
+    "city": "Winterthur",
+    "canton": "ZH"
+  },
+  "FHNW": {
+    "acronym": "FHNW",
+    "full_name": "Fachhochschule Nordwestschweiz",
+    "code": "4009",
+    "city": "Brugg-Windisch",
+    "canton": "AG"
+  }
+}
