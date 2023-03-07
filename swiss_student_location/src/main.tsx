@@ -11,6 +11,7 @@ import Home from "@pages/Home";
 import Layout from "@pages/layout";
 import SignUp from "@pages/users/SignUp";
 import SignIn from "@pages/users/SignIn";
+import ResetPassword from "@pages/users/reset-password";
 
 export default function App() {
     return (
@@ -20,6 +21,7 @@ export default function App() {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/signin' element={<SignIn/>}/>
                     <Route path='/signup' element={<SignUp/>}/>
+                    <Route path='/reset-password' element={<ResetPassword/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
