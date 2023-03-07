@@ -19,7 +19,8 @@
       "@components/*": ["src/components/*"],
       "@config/*": ["src/config/*"],
       "@utils/*": ["src/utils/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@pages/*": ["src/pages/*"]
     },
     "incremental": true
   },
