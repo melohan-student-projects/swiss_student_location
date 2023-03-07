@@ -35,7 +35,7 @@ export default function ResetPassword() {
                             <div className="max-w-sm mx-auto">
                                 <form>
                                     <div className="flex flex-column gap-2">
-                                        <label htmlFor="email">Email</label>
+                                        <label  htmlFor="email">Email</label>
                                         <InputText id="email" aria-describedby="email-help" />
                                     </div>
                                     <Button label="Reset Password" className="w-full mt-4" />

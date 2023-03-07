@@ -16,20 +16,20 @@ export default function Navbar() {
                     <Button label="Home" className="p-button-rounded p-button-text p-button-lg"/>
                 </Link>
 
-                <Link to={'/Client'} className={'navbar_link'}>
-                    <Button label="Client" className="p-button-rounded p-button-text p-button-lg"/>
-                </Link>
-
-                <Link to={'/Feature'} className={'navbar_link'}>
-                    <Button label="Feature" className="p-button-rounded p-button-text p-button-lg"/>
+                <Link to={'/apartment'} className={'navbar_link'}>
+                    <Button label="Apartment" className="p-button-rounded p-button-text p-button-lg"/>
                 </Link>
 
                 <Link to={'/Gallery'} className={'navbar_link'}>
                     <Button label="Gallery" className="p-button-rounded p-button-text p-button-lg"/>
                 </Link>
 
-                <Link to={'/Pricing'} className={'navbar_link'}>
-                    <Button label="Pricing" className="p-button-rounded p-button-text p-button-lg"/>
+                <Link to={'/school'} className={'navbar_link'}>
+                    <Button label="School" className="p-button-rounded p-button-text p-button-lg"/>
+                </Link>
+
+                <Link to={'/favorite'} className={'navbar_link'}>
+                    <Button label="Favorite" className="p-button-rounded p-button-text p-button-lg"/>
                 </Link>
 
                 <Link to={'/Contact'} className={'navbar_link'}>
