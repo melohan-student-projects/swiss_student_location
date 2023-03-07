@@ -9,15 +9,17 @@ import './index.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "@pages/Home";
 import Layout from "@pages/layout";
-import Register from "@pages/users/Register";
+import SignUp from "@pages/users/SignUp";
+import SignIn from "@pages/users/SignIn";
 
 export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Home/>}/>
                 <Route path={"/"} element={<Layout/>}>
-                    <Route path='/register' element={<Register/>}/>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/signin' element={<SignIn/>}/>
+                    <Route path='/signup' element={<SignUp/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
