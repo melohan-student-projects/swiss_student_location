@@ -1,4 +1,5 @@
 import '@assets/style/NotFound404.css'
+import {Link} from "react-router-dom";
 export default function NotFound404() {
     return (
         <div>
@@ -33,8 +34,9 @@ export default function NotFound404() {
                                 take a look at our.</p>
                         </div>
                         <div className="error__nav e-nav">
-                            <a href="" target="_blanck" className="e-nav__link"></a>
+                            <Link to="/" className="e-nav__link"></Link>
                         </div>
+
                     </div>
 
                 </section>

@@ -13,6 +13,7 @@ import SignUp from "@pages/users/SignUp";
 import SignIn from "@pages/users/SignIn";
 import ResetPassword from "@pages/users/reset-password";
 import NotFound404 from "@pages/NotFound404";
+import Apartment from "@pages/Apartment";
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
                     <Route path='/signin' element={<SignIn/>}/>
                     <Route path='/signup' element={<SignUp/>}/>
                     <Route path='/reset-password' element={<ResetPassword/>}/>
+                    <Route path='/apartment' element={<Apartment/>}/>
                     <Route path='*' element={<NotFound404/>}/>
                 </Route>
             </Routes>
