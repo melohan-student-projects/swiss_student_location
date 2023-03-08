@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 export default function NotFound404() {
     return (
         <div>
-            <a href="https://codepen.io/uiswarup/full/yLzypyY" target="_blank">
                 <header className="top-header">
                 </header>
 
@@ -38,10 +37,7 @@ export default function NotFound404() {
                         </div>
 
                     </div>
-
                 </section>
-
-            </a>
         </div>
     );
 };
