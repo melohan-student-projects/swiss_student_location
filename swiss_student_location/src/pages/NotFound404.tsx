@@ -1,5 +1,6 @@
 import '@assets/style/NotFound404.css'
 import {Link} from "react-router-dom";
+
 export default function NotFound404() {
     return (
         <div>
@@ -13,7 +14,6 @@ export default function NotFound404() {
                     <div className="starfourth"></div>
                     <div className="starfifth"></div>
                 </div>
-
 
                 <div className="lamp__wrap">
                     <div className="lamp">
