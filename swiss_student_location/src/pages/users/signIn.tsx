@@ -61,9 +61,7 @@ export default function SignUp() {
                                                 <label className="flex items-center">
                                                     <Checkbox inputId="remember-me" />
                                                     <span className="ml-2">Remember me</span>
-                                                </label>
-                                                <Link to="/reset-password" className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">Forgot Password?</Link>
-                                            </div>
+                                                </label> </div>
                                         </div>
                                     </div>
                                     <Button label="Sign in" className="w-full" />
