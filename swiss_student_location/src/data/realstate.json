@@ -1,5 +1,5 @@
 {
-    "realestate":[
+    "realestates":[
         {
             "id" : 1,
             "advertisement": {
@@ -246,88 +246,6 @@
         "/src/assets/images/photos/apartment6_5.jpg"
         ]
         },
-        {
-        "id" : 7,
-        "advertisement": {
-        "contact": "sophie.chen@example.com",
-        "ad_date": "07-03-2023",
-        "real_estate_date": "01-06-2023",
-        "author": "Century 21 SA"
-        },
-        "address": {
-        "canton": "Geneva",
-        "zip": "1204",
-        "city" : "Geneva",
-        "street": "Rue du Rhône",
-        "postcode": "22"
-        },
-        "coordinates": {
-        "longitude": "46.20439",
-        "latitude": "6.14915"
-        },
-        "rental_properties": {
-        "status": "available",
-        "availability_date": "01-06-2023",
-        "type": "2-bedroom",
-        "description": "Renovated 2-bedroom apartment in the heart of Geneva.",
-        "surface": 90.0,
-        "rooms": 3,
-        "furnished": false,
-        "rent": 2500,
-        "charges": 400,
-        "flat_sharing": false,
-        "parking_available": false,
-        "parking_rent": null
-        },
-        "photos": [
-        "/src/assets/images/photos/apartment7_1.jpg",
-        "/src/assets/images/photos/apartment7_2.jpg",
-        "/src/assets/images/photos/apartment7_3.jpg",
-        "/src/assets/images/photos/apartment7_4.jpg",
-        "/src/assets/images/photos/apartment7_5.jpg"
-        ]
-        },
-        {
-            "id" : 6,
-            "advertisement": {
-            "contact": "david.lee@example.com",
-            "ad_date": "06-03-2023",
-            "real_estate_date": "01-09-2023",
-            "author": "Luxury Home SA"
-            },
-            "address": {
-            "canton": "Valais",
-            "zip": "3977",
-            "city" : "Grimentz",
-            "street": "Rue Centrale",
-            "postcode": "11"
-            },
-            "coordinates": {
-            "longitude": "46.17942",
-            "latitude": "7.61532"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-09-2023",
-            "type": "1-bedroom",
-            "description": "Charming 1-bedroom apartment in Grimentz.",
-            "surface": 50.0,
-            "rooms": 2,
-            "furnished": true,
-            "rent": 1200,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 100
-            },
-            "photos": [
-            "/src/assets/images/photos/apartment6_1.jpg",
-            "/src/assets/images/photos/apartment6_2.jpg",
-            "/src/assets/images/photos/apartment6_3.jpg",
-            "/src/assets/images/photos/apartment6_4.jpg",
-            "/src/assets/images/photos/apartment6_5.jpg"
-            ]
-        },   
         {
         "id" : 7,
         "advertisement": {
