@@ -1,107 +1,107 @@
 {
-    "realestates":[
-        {
-            "id" : 1,
-            "advertisement": {
-                "contact": "jane.doe@example.com",
-                "ad_date": "02-03-2023",
-                "real_estate_date": "01-05-2023",
-                "author": "COGESTIM SA"
-            },
-            "address": {
-                "canton": "Vaud",
-                "zip": "1450",
-                "city" : "Sainte-Croix",
-                "street": "Rue du Midi",
-                "postcode": "8"
-            },
-            "coordinates": {
-                "longitude": "41.40338",
-                "latitude": " 2.17403"
-            },
-            "rental_properties": {
-                "status": "available",
-                "availability_date": "01-05-2023",
-                "type": "studio",
-                "description": "Les charges comprennent 50CHF pour l'abonnement internet et la TV.",
-                "surface": 25.0,
-                "rooms": 1.5,
-                "furnished": true,
-                "rent": 700,
-                "charges": 200,
-                "flat_sharing": false,
-                "parking_available": true,
-                "parking_rent": 100
-            },
-            "photos": [
-                "/src/assets/images/photos/apartment1_1.jpg",
-                "/src/assets/images/photos/apartment1_2.jpg",
-                "/src/assets/images/photos/apartment1_3.jpg",
-                "/src/assets/images/photos/apartment1_4.jpg",
-                "/src/assets/images/photos/apartment1_5.jpg"
-                ]
-        },
-        {
-            "id" : 2,
-            "advertisement": {
-            "contact": "john.doe@example.com",
-            "ad_date": "01-03-2023",
-            "real_estate_date": "01-04-2023",
-            "author": "Swiss Real Estate"
-            },
-            "address": {
-            "canton": "Geneva",
-            "zip": "1207",
-            "city" : "Geneva",
-            "street": "Rue du Rhone",
-            "postcode": "15"
-            },
-            "coordinates": {
-            "longitude": "46.204391",
-            "latitude": "6.146854"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-04-2023",
-            "type": "studio",
-            "description": "Charming and modern studio apartment in the heart of Geneva. Fully furnished with high-end appliances.",
-            "surface": 30.0,
-            "rooms": 1.0,
-            "furnished": true,
-            "rent": 1200,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 200
-            },
-            "photos": [
-                "/src/assets/images/photos/apartment2_1.jpg",
-                "/src/assets/images/photos/apartment2_2.jpg",
-                "/src/assets/images/photos/apartment2_3.jpg",
-                "/src/assets/images/photos/apartment2_4.jpg",
-                "/src/assets/images/photos/apartment2_5.jpg"
-                ]
-        },
-        {
-        "id" : 3,
-        "advertisement": {
+  "realestates": [
+    {
+      "id": 1,
+      "advertisement": {
+        "contact": "jane.doe@example.com",
+        "ad_date": "02-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "COGESTIM SA"
+      },
+      "address": {
+        "canton": "Vaud",
+        "zip": "1450",
+        "city": "Sainte-Croix",
+        "street": "Rue du Midi",
+        "postcode": "8"
+      },
+      "coordinates": {
+        "longitude": "41.40338",
+        "latitude": " 2.17403"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "studio",
+        "description": "Les charges comprennent 50CHF pour l'abonnement internet et la TV.",
+        "surface": 25.0,
+        "rooms": 1.5,
+        "furnished": true,
+        "rent": 700,
+        "charges": 200,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 100
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment1_1.jpg",
+        "/src/assets/images/photos/apartment1_2.jpg",
+        "/src/assets/images/photos/apartment1_3.jpg",
+        "/src/assets/images/photos/apartment1_4.jpg",
+        "/src/assets/images/photos/apartment1_5.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "advertisement": {
+        "contact": "john.doe@example.com",
+        "ad_date": "01-03-2023",
+        "real_estate_date": "01-04-2023",
+        "author": "Swiss Real Estate"
+      },
+      "address": {
+        "canton": "Geneva",
+        "zip": "1207",
+        "city": "Geneva",
+        "street": "Rue du Rhone",
+        "postcode": "15"
+      },
+      "coordinates": {
+        "longitude": "46.204391",
+        "latitude": "6.146854"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-04-2023",
+        "type": "studio",
+        "description": "Charming and modern studio apartment in the heart of Geneva. Fully furnished with high-end appliances.",
+        "surface": 30.0,
+        "rooms": 1.0,
+        "furnished": true,
+        "rent": 1200,
+        "charges": 150,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 200
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment2_1.jpg",
+        "/src/assets/images/photos/apartment2_2.jpg",
+        "/src/assets/images/photos/apartment2_3.jpg",
+        "/src/assets/images/photos/apartment2_4.jpg",
+        "/src/assets/images/photos/apartment2_5.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "advertisement": {
         "contact": "jane.smith@example.com",
         "ad_date": "01-03-2023",
         "real_estate_date": "01-05-2023",
         "author": "ImmoScout24"
-        },
-        "address": {
+      },
+      "address": {
         "canton": "Zurich",
         "zip": "8004",
-        "city" : "Zurich",
+        "city": "Zurich",
         "street": "Langstrasse",
         "postcode": "41"
-        },
-        "coordinates": {
+      },
+      "coordinates": {
         "longitude": "47.37663",
         "latitude": "8.53196"
-        },
-        "rental_properties": {
+      },
+      "rental_properties": {
         "status": "available",
         "availability_date": "01-05-2023",
         "type": "1-bedroom",
@@ -114,76 +114,76 @@
         "flat_sharing": false,
         "parking_available": true,
         "parking_rent": 250
-        },
-        "photos": [
-            "/src/assets/images/photos/apartment3_1.jpg",
-            "/src/assets/images/photos/apartment3_2.jpg",
-            "/src/assets/images/photos/apartment3_3.jpg",
-            "/src/assets/images/photos/apartment3_4.jpg",
-            "/src/assets/images/photos/apartment3_5.jpg"
-            ]
-        },
-        {
-            "id" : 4,
-            "advertisement": {
-            "contact": "mark.davis@example.com",
-            "ad_date": "04-03-2023",
-            "real_estate_date": "01-07-2023",
-            "author": "Davis Properties"
-            },
-            "address": {
-            "canton": "Bern",
-            "zip": "3011",
-            "city" : "Bern",
-            "street": "Kramgasse",
-            "postcode": "3"
-            },
-            "coordinates": {
-            "longitude": "46.94784",
-            "latitude": "7.44745"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-07-2023",
-            "type": "2-bedroom",
-            "description": "Beautiful 2-bedroom apartment in the historic center of Bern.",
-            "surface": 75.0,
-            "rooms": 3,
-            "furnished": true,
-            "rent": 2000,
-            "charges": 300,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 200
-            },
-            "photos": [
-            "/src/assets/images/photos/apartment4_1.jpg",
-            "/src/assets/images/photos/apartment4_2.jpg",
-            "/src/assets/images/photos/apartment4_3.jpg",
-            "/src/assets/images/photos/apartment4_4.jpg",
-            "/src/assets/images/photos/apartment4_5.jpg"
-            ]
-        },                
-        {
-        "id" : 5,
-        "advertisement": {
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment3_1.jpg",
+        "/src/assets/images/photos/apartment3_2.jpg",
+        "/src/assets/images/photos/apartment3_3.jpg",
+        "/src/assets/images/photos/apartment3_4.jpg",
+        "/src/assets/images/photos/apartment3_5.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "advertisement": {
+        "contact": "mark.davis@example.com",
+        "ad_date": "04-03-2023",
+        "real_estate_date": "01-07-2023",
+        "author": "Davis Properties"
+      },
+      "address": {
+        "canton": "Bern",
+        "zip": "3011",
+        "city": "Bern",
+        "street": "Kramgasse",
+        "postcode": "3"
+      },
+      "coordinates": {
+        "longitude": "46.94784",
+        "latitude": "7.44745"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-07-2023",
+        "type": "2-bedroom",
+        "description": "Beautiful 2-bedroom apartment in the historic center of Bern.",
+        "surface": 75.0,
+        "rooms": 3,
+        "furnished": true,
+        "rent": 2000,
+        "charges": 300,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 200
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment4_1.jpg",
+        "/src/assets/images/photos/apartment4_2.jpg",
+        "/src/assets/images/photos/apartment4_3.jpg",
+        "/src/assets/images/photos/apartment4_4.jpg",
+        "/src/assets/images/photos/apartment4_5.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "advertisement": {
         "contact": "emily.ng@example.com",
         "ad_date": "05-03-2023",
         "real_estate_date": "01-08-2023",
         "author": "Swiss Realty"
-        },
-        "address": {
+      },
+      "address": {
         "canton": "Lucerne",
         "zip": "6003",
-        "city" : "Lucerne",
+        "city": "Lucerne",
         "street": "Haldenstrasse",
         "postcode": "12"
-        },
-        "coordinates": {
+      },
+      "coordinates": {
         "longitude": "47.04741",
         "latitude": "8.30687"
-        },
-        "rental_properties": {
+      },
+      "rental_properties": {
         "status": "available",
         "availability_date": "01-08-2023",
         "type": "3-bedroom",
@@ -196,35 +196,35 @@
         "flat_sharing": false,
         "parking_available": true,
         "parking_rent": 300
-        },
-        "photos": [
+      },
+      "photos": [
         "/src/assets/images/photos/apartment5_1.jpg",
         "/src/assets/images/photos/apartment5_2.jpg",
         "/src/assets/images/photos/apartment5_3.jpg",
         "/src/assets/images/photos/apartment5_4.jpg",
         "/src/assets/images/photos/apartment5_5.jpg"
-        ]
-        },
-        {
-        "id" : 6,
-        "advertisement": {
+      ]
+    },
+    {
+      "id": 6,
+      "advertisement": {
         "contact": "david.lee@example.com",
         "ad_date": "06-03-2023",
         "real_estate_date": "01-09-2023",
         "author": "Luxury Home SA"
-        },
-        "address": {
+      },
+      "address": {
         "canton": "Valais",
         "zip": "3977",
-        "city" : "Grimentz",
+        "city": "Grimentz",
         "street": "Rue Centrale",
         "postcode": "11"
-        },
-        "coordinates": {
+      },
+      "coordinates": {
         "longitude": "46.17942",
         "latitude": "7.61532"
-        },
-        "rental_properties": {
+      },
+      "rental_properties": {
         "status": "available",
         "availability_date": "01-09-2023",
         "type": "1-bedroom",
@@ -237,35 +237,35 @@
         "flat_sharing": false,
         "parking_available": true,
         "parking_rent": 100
-        },
-        "photos": [
-        "/src/assets/images/photos/apartment6_1.jpg",
-        "/src/assets/images/photos/apartment6_2.jpg",
-        "/src/assets/images/photos/apartment6_3.jpg",
-        "/src/assets/images/photos/apartment6_4.jpg",
-        "/src/assets/images/photos/apartment6_5.jpg"
-        ]
-        },
-        {
-        "id" : 7,
-        "advertisement": {
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment3_1.jpg",
+        "/src/assets/images/photos/apartment3_2.jpg",
+        "/src/assets/images/photos/apartment3_3.jpg",
+        "/src/assets/images/photos/apartment3_4.jpg",
+        "/src/assets/images/photos/apartment3_5.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "advertisement": {
         "contact": "sophie.chen@example.com",
         "ad_date": "07-03-2023",
         "real_estate_date": "01-06-2023",
         "author": "Century 21 SA"
-        },
-        "address": {
+      },
+      "address": {
         "canton": "Geneva",
         "zip": "1204",
-        "city" : "Geneva",
+        "city": "Geneva",
         "street": "Rue du Rhône",
         "postcode": "22"
-        },
-        "coordinates": {
+      },
+      "coordinates": {
         "longitude": "46.20439",
         "latitude": "6.14915"
-        },
-        "rental_properties": {
+      },
+      "rental_properties": {
         "status": "available",
         "availability_date": "01-06-2023",
         "type": "2-bedroom",
@@ -278,76 +278,76 @@
         "flat_sharing": false,
         "parking_available": false,
         "parking_rent": null
-        },
-        "photos": [
-        "/src/assets/images/photos/apartment7_1.jpg",
-        "/src/assets/images/photos/apartment7_2.jpg",
-        "/src/assets/images/photos/apartment7_3.jpg",
-        "/src/assets/images/photos/apartment7_4.jpg",
-        "/src/assets/images/photos/apartment7_5.jpg"
-        ]
-        },
-        {
-            "id" : 8,
-            "advertisement": {
-            "contact": "michael.johnson@example.com",
-            "ad_date": "08-03-2023",
-            "real_estate_date": "01-07-2023",
-            "author": "Maison Immo SA"
-            },
-            "address": {
-            "canton": "Zurich",
-            "zip": "8004",
-            "city" : "Zurich",
-            "street": "Langstrasse",
-            "postcode": "27"
-            },
-            "coordinates": {
-            "longitude": "47.37656",
-            "latitude": "8.53429"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-07-2023",
-            "type": "1-bedroom",
-            "description": "Modern 1-bedroom apartment in the trendy Langstrasse area of Zurich.",
-            "surface": 40.0,
-            "rooms": 2,
-            "furnished": false,
-            "rent": 1500,
-            "charges": 250,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 150
-            },
-            "photos": [
-            "/src/assets/images/photos/apartment8_1.jpg",
-            "/src/assets/images/photos/apartment8_2.jpg",
-            "/src/assets/images/photos/apartment8_3.jpg",
-            "/src/assets/images/photos/apartment8_4.jpg",
-            "/src/assets/images/photos/apartment8_5.jpg"
-            ]
-        },    
-        {
-        "id" : 9,
-        "advertisement": {
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment1_1.jpg",
+        "/src/assets/images/photos/apartment1_2.jpg",
+        "/src/assets/images/photos/apartment1_3.jpg",
+        "/src/assets/images/photos/apartment1_4.jpg",
+        "/src/assets/images/photos/apartment1_5.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "advertisement": {
+        "contact": "michael.johnson@example.com",
+        "ad_date": "08-03-2023",
+        "real_estate_date": "01-07-2023",
+        "author": "Maison Immo SA"
+      },
+      "address": {
+        "canton": "Zurich",
+        "zip": "8004",
+        "city": "Zurich",
+        "street": "Langstrasse",
+        "postcode": "27"
+      },
+      "coordinates": {
+        "longitude": "47.37656",
+        "latitude": "8.53429"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-07-2023",
+        "type": "1-bedroom",
+        "description": "Modern 1-bedroom apartment in the trendy Langstrasse area of Zurich.",
+        "surface": 40.0,
+        "rooms": 2,
+        "furnished": false,
+        "rent": 1500,
+        "charges": 250,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 150
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment3_1.jpg",
+        "/src/assets/images/photos/apartment3_2.jpg",
+        "/src/assets/images/photos/apartment3_3.jpg",
+        "/src/assets/images/photos/apartment3_4.jpg",
+        "/src/assets/images/photos/apartment3_5.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "advertisement": {
         "contact": "maria.garcia@example.com",
         "ad_date": "09-03-2023",
         "real_estate_date": "01-07-2023",
         "author": "ImmoSky AG"
-        },
-        "address": {
+      },
+      "address": {
         "canton": "Zug",
         "zip": "6300",
-        "city" : "Zug",
+        "city": "Zug",
         "street": "Hinterbergstrasse",
         "postcode": "13"
-        },
-        "coordinates": {
+      },
+      "coordinates": {
         "longitude": "47.17266",
         "latitude": "8.50628"
-        },
-        "rental_properties": {
+      },
+      "rental_properties": {
         "status": "available",
         "availability_date": "01-07-2023",
         "type": "2-bedroom",
@@ -360,75 +360,75 @@
         "flat_sharing": false,
         "parking_available": true,
         "parking_rent": 100
-        },
-        "photos": [
-        "/src/assets/images/photos/apartment9_1.jpg",
-        "/src/assets/images/photos/apartment9_2.jpg",
-        "/src/assets/images/photos/apartment9_3.jpg",
-        "/src/assets/images/photos/apartment9_4.jpg",
-        "/src/assets/images/photos/apartment9_5.jpg"
-        ]
-        },
-        {
-            "id" : 10,
-            "advertisement": {
-            "contact": "peter.wang@example.com",
-            "ad_date": "10-03-2023",
-            "real_estate_date": "01-04-2023",
-            "author": "Engel & Völkers Zug"
-            },
-            "address": {
-            "canton": "Zug",
-            "zip": "6300",
-            "city" : "Zug",
-            "street": "Bösch",
-            "postcode": "80"
-            },
-            "coordinates": {
-            "longitude": "47.16517",
-            "latitude": "8.51312"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-04-2023",
-            "type": "studio",
-            "description": "Bright and modern studio apartment in Zug.",
-            "surface": 30.0,
-            "rooms": 1,
-            "furnished": true,
-            "rent": 1200,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": false
-            },
-            "photos": [
-            "/src/assets/images/photos/apartment10_1.jpg",
-            "/src/assets/images/photos/apartment10_2.jpg",
-            "/src/assets/images/photos/apartment10_3.jpg",
-            "/src/assets/images/photos/apartment10_4.jpg",
-            "/src/assets/images/photos/apartment10_5.jpg"
-            ]
-        },    
-        {
-        "id" : 11,
-        "advertisement": {
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment4_1.jpg",
+        "/src/assets/images/photos/apartment4_2.jpg",
+        "/src/assets/images/photos/apartment4_3.jpg",
+        "/src/assets/images/photos/apartment4_4.jpg",
+        "/src/assets/images/photos/apartment4_5.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "advertisement": {
+        "contact": "peter.wang@example.com",
+        "ad_date": "10-03-2023",
+        "real_estate_date": "01-04-2023",
+        "author": "Engel & Völkers Zug"
+      },
+      "address": {
+        "canton": "Zug",
+        "zip": "6300",
+        "city": "Zug",
+        "street": "Bösch",
+        "postcode": "80"
+      },
+      "coordinates": {
+        "longitude": "47.16517",
+        "latitude": "8.51312"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-04-2023",
+        "type": "studio",
+        "description": "Bright and modern studio apartment in Zug.",
+        "surface": 30.0,
+        "rooms": 1,
+        "furnished": true,
+        "rent": 1200,
+        "charges": 150,
+        "flat_sharing": false,
+        "parking_available": false
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment1_1.jpg",
+        "/src/assets/images/photos/apartment1_2.jpg",
+        "/src/assets/images/photos/apartment1_3.jpg",
+        "/src/assets/images/photos/apartment1_4.jpg",
+        "/src/assets/images/photos/apartment1_5.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "advertisement": {
         "contact": "carla.bianchi@example.com",
         "ad_date": "11-03-2023",
         "real_estate_date": "01-06-2023",
         "author": "Fidinam & Partners SA"
-        },
-        "address": {
+      },
+      "address": {
         "canton": "Ticino",
         "zip": "6600",
-        "city" : "Locarno",
+        "city": "Locarno",
         "street": "Via ai Monti della Trinità",
         "postcode": "35"
-        },
-        "coordinates": {
+      },
+      "coordinates": {
         "longitude": "46.15802",
         "latitude": "8.80399"
-        },
-        "rental_properties": {
+      },
+      "rental_properties": {
         "status": "available",
         "availability_date": "01-06-2023",
         "type": "2-bedroom",
@@ -441,464 +441,464 @@
         "flat_sharing": false,
         "parking_available": true,
         "parking_rent": 100
-        },
+      },
+      "photos": [
+        "/src/assets/images/photos/apartment5_1.jpg",
+        "/src/assets/images/photos/apartment5_2.jpg",
+        "/src/assets/images/photos/apartment5_3.jpg",
+        "/src/assets/images/photos/apartment5_4.jpg",
+        "/src/assets/images/photos/apartment5_5.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "advertisement": {
+        "contact": "john.smith@example.com",
+        "ad_date": "05-03-2023",
+        "real_estate_date": "01-06-2023",
+        "author": "Smith & Co."
+      },
+      "address": {
+        "canton": "Geneva",
+        "zip": "1201",
+        "city": "Geneva",
+        "street": "Rue du Rhone",
+        "postcode": "23"
+      },
+      "coordinates": {
+        "longitude": "46.20514",
+        "latitude": "6.14694"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-06-2023",
+        "type": "apartment",
+        "description": "Bright and spacious apartment in the heart of Geneva.",
+        "surface": 80.0,
+        "rooms": 3.0,
+        "furnished": true,
+        "rent": 2500,
+        "charges": 200,
+        "flat_sharing": false,
+        "parking_available": false,
+        "parking_rent": null,
         "photos": [
-        "/src/assets/images/photos/apartment11_1.jpg",
-        "/src/assets/images/photos/apartment11_2.jpg",
-        "/src/assets/images/photos/apartment11_3.jpg",
-        "/src/assets/images/photos/apartment11_4.jpg",
-        "/src/assets/images/photos/apartment11_5.jpg"
+          "/src/assets/images/photos/apartment2_1.jpg",
+          "/src/assets/images/photos/apartment2_2.jpg",
+          "/src/assets/images/photos/apartment2_3.jpg",
+          "/src/assets/images/photos/apartment2_4.jpg",
+          "/src/assets/images/photos/apartment2_5.jpg"
         ]
-        },
-        {
-            "id": 12,
-            "advertisement": {
-            "contact": "john.smith@example.com",
-            "ad_date": "05-03-2023",
-            "real_estate_date": "01-06-2023",
-            "author": "Smith & Co."
-            },
-            "address": {
-            "canton": "Geneva",
-            "zip": "1201",
-            "city": "Geneva",
-            "street": "Rue du Rhone",
-            "postcode": "23"
-            },
-            "coordinates": {
-            "longitude": "46.20514",
-            "latitude": "6.14694"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-06-2023",
-            "type": "apartment",
-            "description": "Bright and spacious apartment in the heart of Geneva.",
-            "surface": 80.0,
-            "rooms": 3.0,
-            "furnished": true,
-            "rent": 2500,
-            "charges": 200,
-            "flat_sharing": false,
-            "parking_available": false,
-            "parking_rent": null,
-            "photos": [
-                "/src/assets/images/photos/apartment12_1.jpg",
-                "/src/assets/images/photos/apartment12_2.jpg",
-                "/src/assets/images/photos/apartment12_3.jpg",
-                "/src/assets/images/photos/apartment12_4.jpg",
-                "/src/assets/images/photos/apartment12_5.jpg"
-                ]
-            }
-        },
-        {
-        "id": 13,
-        "advertisement": {
-            "contact": "jane.doe@example.com",
-            "ad_date": "07-03-2023",
-            "real_estate_date": "01-05-2023",
-            "author": "COGESTIM SA"
-        },
-        "address": {
-            "canton": "Zurich",
-            "zip": "8001",
-            "city": "Zurich",
-            "street": "Bahnhofstrasse",
-            "postcode": "12"
-        },
-        "coordinates": {
-            "longitude": "47.37267",
-            "latitude": "8.53908"
-        },
-        "rental_properties": {
-            "status": "available",
-            "availability_date": "01-05-2023",
-            "type": "studio",
-            "description": "Cozy studio in the heart of Zurich.",
-            "surface": 30.0,
-            "rooms": 1.0,
-            "furnished": true,
-            "rent": 1200,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": false,
-            "parking_rent": null,
-            "photos": [
-            "/src/assets/images/photos/apartment13_1.jpg",
-            "/src/assets/images/photos/apartment13_2.jpg",
-            "/src/assets/images/photos/apartment13_3.jpg",
-            "/src/assets/images/photos/apartment13_4.jpg",
-            "/src/assets/images/photos/apartment13_5.jpg"
-            ]
-        }
-        },
-        {
-        "id": 14,
-        "advertisement": {
-            "contact": "maria.gonzalez@example.com",
-            "ad_date": "08-03-2023",
-            "real_estate_date": "01-05-2023",
-            "author": "ImmoZ"
-        },
-        "address": {
-            "canton": "Bern",
-            "zip": "3014",
-            "city": "Bern",
-            "street": "Kirchstrasse",
-            "postcode": "25"
-        },
-        "coordinates": {
-            "longitude": "46.94799",
-            "latitude": "7.42777"
-        },
-        "rental_properties": {
-            "status": "available",
-            "availability_date": "01-05-2023",
-            "type": "apartment",
-            "description": "Spacious 2-room apartment with modern furnishings and balcony.",
-            "surface": 50.0,
-            "rooms": 2.0,
-            "furnished": false,
-            "rent": 1100,
-            "charges": 250,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 100,
-            "photos": [
-            "/src/assets/images/photos/apartment14_1.jpg",
-            "/src/assets/images/photos/apartment14_2.jpg",
-            "/src/assets/images/photos/apartment14_3.jpg",
-            "/src/assets/images/photos/apartment14_4.jpg",
-            "/src/assets/images/photos/apartment14_5.jpg"
-            ]
-        }
-        },  
-        {
-        "id": 15,
-        "advertisement": {
-            "contact": "john.doe@example.com",
-            "ad_date": "09-03-2023",
-            "real_estate_date": "01-05-2023",
-            "author": "Swiss Real Estate"
-        },
-        "address": {
-            "canton": "Zurich",
-            "zip": "8006",
-            "city": "Zurich",
-            "street": "Kasernenstrasse",
-            "postcode": "12"
-        },
-        "coordinates": {
-            "longitude": "47.37782",
-            "latitude": "8.53515"
-        },
-        "rental_properties": {
-            "status": "available",
-            "availability_date": "01-05-2023",
-            "type": "studio",
-            "description": "Bright and cozy studio apartment in a central location.",
-            "surface": 30.0,
-            "rooms": 1.0,
-            "furnished": true,
-            "rent": 950,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": false,
-            "parking_rent": null,
-            "photos": [
-            "/src/assets/images/photos/apartment15_1.jpg",
-            "/src/assets/images/photos/apartment15_2.jpg",
-            "/src/assets/images/photos/apartment15_3.jpg",
-            "/src/assets/images/photos/apartment15_4.jpg",
-            "/src/assets/images/photos/apartment15_5.jpg"
-            ]
-        }
-        },  
-        {
-            "id": 16,
-            "advertisement": {
-            "contact": "anne.smith@example.com",
-            "ad_date": "10-03-2023",
-            "real_estate_date": "01-05-2023",
-            "author": "ABC Immobilien"
-            },
-            "address": {
-            "canton": "Geneva",
-            "zip": "1207",
-            "city": "Geneva",
-            "street": "Rue de Lausanne",
-            "postcode": "20"
-            },
-            "coordinates": {
-            "longitude": "46.20197",
-            "latitude": "6.15325"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-05-2023",
-            "type": "apartment",
-            "description": "Beautifully furnished 3-room apartment with balcony and lake view.",
-            "surface": 85.0,
-            "rooms": 3.0,
-            "furnished": true,
-            "rent": 2200,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 100,
-            "photos": [
-                "/src/assets/images/photos/apartment16_1.jpg",
-                "/src/assets/images/photos/apartment16_2.jpg",
-                "/src/assets/images/photos/apartment16_3.jpg",
-                "/src/assets/images/photos/apartment16_4.jpg",
-                "/src/assets/images/photos/apartment16_5.jpg"
-                ]
-            }
-        },
-        {
-            "id": 17,
-            "advertisement": {
-            "contact": "marc.brun@example.com",
-            "ad_date": "07-03-2023",
-            "real_estate_date": "15-04-2023",
-            "author": "ImmoBienne SA"
-            },
-            "address": {
-            "canton": "Bern",
-            "zip": "2502",
-            "city": "Biel/Bienne",
-            "street": "Rue de la Serre",
-            "postcode": "3"
-            },
-            "coordinates": {
-            "longitude": "47.14157",
-            "latitude": "7.24746"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "15-04-2023",
-            "type": "2-room apartment",
-            "description": "This apartment has a balcony and is located on the 2nd floor of a building with elevator.",
-            "surface": 50.0,
-            "rooms": 2.0,
-            "furnished": false,
-            "rent": 1150,
-            "charges": 250,
-            "flat_sharing": false,
-            "parking_available": false,
-            "parking_rent": null,
-            "photos": [
-                "/src/assets/images/photos/apartment17_1.jpg",
-                "/src/assets/images/photos/apartment17_2.jpg",
-                "/src/assets/images/photos/apartment17_3.jpg",
-                "/src/assets/images/photos/apartment17_4.jpg",
-                "/src/assets/images/photos/apartment17_5.jpg"
-                ]
-            }
-        },
-        {
-        "id": 18,
-        "advertisement": {
-            "contact": "pauline.dupont@example.com",
-            "ad_date": "07-03-2023",
-            "real_estate_date": "01-05-2023",
-            "author": "Swiss Location SA"
-        },
-        "address": {
-            "canton": "Vaud",
-            "zip": "1004",
-            "city": "Lausanne",
-            "street": "Rue de l'Industrie",
-            "postcode": "28"
-        },
-        "coordinates": {
-            "longitude": "46.51855",
-            "latitude": "6.63377"
-        },
-        "rental_properties": {
-            "status": "available",
-            "availability_date": "01-05-2023",
-            "type": "studio",
-            "description": "This studio is located on the ground floor of a building in a quiet area.",
-            "surface": 30.0,
-            "rooms": 1.0,
-            "furnished": true,
-            "rent": 850,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 100,
-            "photos": [
-            "/src/assets/images/photos/apartment18_1.jpg",
-            "/src/assets/images/photos/apartment18_2.jpg",
-            "/src/assets/images/photos/apartment18_3.jpg",
-            "/src/assets/images/photos/apartment18_4.jpg",
-            "/src/assets/images/photos/apartment18_5.jpg"
-            ]
-        }
-        },
-        {
-            "id": 19,
-            "advertisement": {
-            "contact": "caroline.brown@example.com",
-            "ad_date": "08-03-2023",
-            "real_estate_date": "01-06-2023",
-            "author": "Zurich Properties"
-            },
-            "address": {
-            "canton": "Zurich",
-            "zip": "8037",
-            "city": "Zürich",
-            "street": "Kalkbreitestrasse",
-            "postcode": "80"
-            },
-            "coordinates": {
-            "longitude": "47.38115",
-            "latitude": "8.52818"
-            },
-            "rental_properties": {
-            "status": "available",
-            "availability_date": "01-06-2023",
-            "type": "3-room apartment",
-            "description": "This apartment is located in a trendy neighbourhood close to many shops and restaurants.",
-            "surface": 30.0,
-            "rooms": 1.0,
-            "furnished": true,
-            "rent": 850,
-            "charges": 150,
-            "flat_sharing": false,
-            "parking_available": true,
-            "parking_rent": 100,
-            "photos": [
-                "/src/assets/images/photos/apartment19_1.jpg",
-                "/src/assets/images/photos/apartment19_2.jpg",
-                "/src/assets/images/photos/apartment19_3.jpg",
-                "/src/assets/images/photos/apartment19_4.jpg",
-                "/src/assets/images/photos/apartment19_5.jpg"
-                ]
-            }
-        },
-        {
-            "id": 20,
-            "advertisement": {
-                "contact": "jane.doe@example.com",
-                "ad_date": "08-03-2023",
-                "real_estate_date": "15-04-2023",
-                "author": "Agency XYZ"
-            },
-            "address": {
-                "canton": "Bern",
-                "zip": "3011",
-                "city": "Bern",
-                "street": "Kochergasse",
-                "postcode": "9"
-            },
-            "coordinates": {
-                "longitude": "46.94798",
-                "latitude": " 7.44744"
-            },
-            "rental_properties": {
-                "status": "available",
-                "availability_date": "15-04-2023",
-                "type": "2-room apartment",
-                "description": "Beautifully renovated apartment in the heart of Bern.",
-                "surface": 50.0,
-                "rooms": 2.0,
-                "furnished": false,
-                "rent": 1000,
-                "charges": 250,
-                "flat_sharing": false,
-                "parking_available": true,
-                "parking_rent": 150,
-                "photos": [
-                "/src/assets/images/photos/apartment20_1.jpg",
-                "/src/assets/images/photos/apartment20_2.jpg",
-                "/src/assets/images/photos/apartment20_3.jpg",
-                "/src/assets/images/photos/apartment20_4.jpg",
-                "/src/assets/images/photos/apartment20_5.jpg"
-                ]
-            }
-        },
-        {
-        "id": 21,
-        "advertisement": {
-            "contact": "john.doe@example.com",
-            "ad_date": "08-03-2023",
-            "real_estate_date": "01-05-2023",
-            "author": "Real Estate Inc."
-        },
-        "address": {
-            "canton": "Geneva",
-            "zip": "1207",
-            "city": "Geneva",
-            "street": "Rue de Vermont",
-            "postcode": "6"
-        },
-        "coordinates": {
-            "longitude": "46.20198",
-            "latitude": "6.14856"
-        },
-        "rental_properties": {
-            "status": "available",
-            "availability_date": "01-05-2023",
-            "type": "1-room apartment",
-            "description": "Sunny apartment in a great location near public transportation.",
-            "surface": 35.0,
-            "rooms": 1.0,
-            "furnished": true,
-            "rent": 900,
-            "charges": 200,
-            "flat_sharing": false,
-            "parking_available": false,
-            "parking_rent": null,
-            "photos": [
-            "/src/assets/images/photos/apartment21_1.jpg",
-            "/src/assets/images/photos/apartment21_2.jpg",
-            "/src/assets/images/photos/apartment21_3.jpg",
-            "/src/assets/images/photos/apartment21_4.jpg",
-            "/src/assets/images/photos/apartment21_5.jpg"
-            ]
-        }
-        },
-        {
-            "id": 22,
-            "advertisement": {
-                "contact": "jane.doe@example.com",
-                "ad_date": "08-03-2023",
-                "real_estate_date": "01-06-2023",
-                "author": "Agency ABC"
-            },
-            "address": {
-                "canton": "Zurich",
-                "zip": "8001",
-                "city": "Zurich",
-                "street": "Mühlegasse",
-                "postcode": "3"
-            },
-            "coordinates": {
-                "longitude": "47.37285",
-                "latitude": "8.53545"
-            },
-            "rental_properties": {
-                "status": "available",
-                "availability_date": "01-06-2023",
-                "type": "3-room apartment",
-                "description": "Spacious apartment with balcony and great views of the city.",
-                "surface": 80.0,
-                "rooms": 3.0,
-                "furnished": false,
-                "rent": 1500,
-                "charges": 300,
-                "flat_sharing": false,
-                "parking_available": true,
-                "parking_rent": 150,
-                "photos": [
-                "/src/assets/images/photos/apartment22_1.jpg",
-                "/src/assets/images/photos/apartment22_2.jpg",
-                "/src/assets/images/photos/apartment22_3.jpg",
-                "/src/assets/images/photos/apartment22_4.jpg",
-                "/src/assets/images/photos/apartment22_5.jpg"
-                ]
-            }
-        }
-    ]
+      }
+    },
+    {
+      "id": 13,
+      "advertisement": {
+        "contact": "jane.doe@example.com",
+        "ad_date": "07-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "COGESTIM SA"
+      },
+      "address": {
+        "canton": "Zurich",
+        "zip": "8001",
+        "city": "Zurich",
+        "street": "Bahnhofstrasse",
+        "postcode": "12"
+      },
+      "coordinates": {
+        "longitude": "47.37267",
+        "latitude": "8.53908"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "studio",
+        "description": "Cozy studio in the heart of Zurich.",
+        "surface": 30.0,
+        "rooms": 1.0,
+        "furnished": true,
+        "rent": 1200,
+        "charges": 150,
+        "flat_sharing": false,
+        "parking_available": false,
+        "parking_rent": null,
+        "photos": [
+          "/src/assets/images/photos/apartment3_1.jpg",
+          "/src/assets/images/photos/apartment3_2.jpg",
+          "/src/assets/images/photos/apartment3_3.jpg",
+          "/src/assets/images/photos/apartment3_4.jpg",
+          "/src/assets/images/photos/apartment3_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "advertisement": {
+        "contact": "maria.gonzalez@example.com",
+        "ad_date": "08-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "ImmoZ"
+      },
+      "address": {
+        "canton": "Bern",
+        "zip": "3014",
+        "city": "Bern",
+        "street": "Kirchstrasse",
+        "postcode": "25"
+      },
+      "coordinates": {
+        "longitude": "46.94799",
+        "latitude": "7.42777"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "apartment",
+        "description": "Spacious 2-room apartment with modern furnishings and balcony.",
+        "surface": 50.0,
+        "rooms": 2.0,
+        "furnished": false,
+        "rent": 1100,
+        "charges": 250,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 100,
+        "photos": [
+          "/src/assets/images/photos/apartment4_1.jpg",
+          "/src/assets/images/photos/apartment4_2.jpg",
+          "/src/assets/images/photos/apartment4_3.jpg",
+          "/src/assets/images/photos/apartment4_4.jpg",
+          "/src/assets/images/photos/apartment4_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "advertisement": {
+        "contact": "john.doe@example.com",
+        "ad_date": "09-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "Swiss Real Estate"
+      },
+      "address": {
+        "canton": "Zurich",
+        "zip": "8006",
+        "city": "Zurich",
+        "street": "Kasernenstrasse",
+        "postcode": "12"
+      },
+      "coordinates": {
+        "longitude": "47.37782",
+        "latitude": "8.53515"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "studio",
+        "description": "Bright and cozy studio apartment in a central location.",
+        "surface": 30.0,
+        "rooms": 1.0,
+        "furnished": true,
+        "rent": 950,
+        "charges": 150,
+        "flat_sharing": false,
+        "parking_available": false,
+        "parking_rent": null,
+        "photos": [
+          "/src/assets/images/photos/apartment5_1.jpg",
+          "/src/assets/images/photos/apartment5_2.jpg",
+          "/src/assets/images/photos/apartment5_3.jpg",
+          "/src/assets/images/photos/apartment5_4.jpg",
+          "/src/assets/images/photos/apartment5_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "advertisement": {
+        "contact": "anne.smith@example.com",
+        "ad_date": "10-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "ABC Immobilien"
+      },
+      "address": {
+        "canton": "Geneva",
+        "zip": "1207",
+        "city": "Geneva",
+        "street": "Rue de Lausanne",
+        "postcode": "20"
+      },
+      "coordinates": {
+        "longitude": "46.20197",
+        "latitude": "6.15325"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "apartment",
+        "description": "Beautifully furnished 3-room apartment with balcony and lake view.",
+        "surface": 85.0,
+        "rooms": 3.0,
+        "furnished": true,
+        "rent": 2200,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 100,
+        "photos": [
+          "/src/assets/images/photos/apartment1_1.jpg",
+          "/src/assets/images/photos/apartment1_2.jpg",
+          "/src/assets/images/photos/apartment1_3.jpg",
+          "/src/assets/images/photos/apartment1_4.jpg",
+          "/src/assets/images/photos/apartment1_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "advertisement": {
+        "contact": "marc.brun@example.com",
+        "ad_date": "07-03-2023",
+        "real_estate_date": "15-04-2023",
+        "author": "ImmoBienne SA"
+      },
+      "address": {
+        "canton": "Bern",
+        "zip": "2502",
+        "city": "Biel/Bienne",
+        "street": "Rue de la Serre",
+        "postcode": "3"
+      },
+      "coordinates": {
+        "longitude": "47.14157",
+        "latitude": "7.24746"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "15-04-2023",
+        "type": "2-room apartment",
+        "description": "This apartment has a balcony and is located on the 2nd floor of a building with elevator.",
+        "surface": 50.0,
+        "rooms": 2.0,
+        "furnished": false,
+        "rent": 1150,
+        "charges": 250,
+        "flat_sharing": false,
+        "parking_available": false,
+        "parking_rent": null,
+        "photos": [
+          "/src/assets/images/photos/apartment3_1.jpg",
+          "/src/assets/images/photos/apartment3_2.jpg",
+          "/src/assets/images/photos/apartment3_3.jpg",
+          "/src/assets/images/photos/apartment4_4.jpg",
+          "/src/assets/images/photos/apartment5_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "advertisement": {
+        "contact": "pauline.dupont@example.com",
+        "ad_date": "07-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "Swiss Location SA"
+      },
+      "address": {
+        "canton": "Vaud",
+        "zip": "1004",
+        "city": "Lausanne",
+        "street": "Rue de l'Industrie",
+        "postcode": "28"
+      },
+      "coordinates": {
+        "longitude": "46.51855",
+        "latitude": "6.63377"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "studio",
+        "description": "This studio is located on the ground floor of a building in a quiet area.",
+        "surface": 30.0,
+        "rooms": 1.0,
+        "furnished": true,
+        "rent": 850,
+        "charges": 150,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 100,
+        "photos": [
+          "/src/assets/images/photos/apartment3_1.jpg",
+          "/src/assets/images/photos/apartment3_2.jpg",
+          "/src/assets/images/photos/apartment3_3.jpg",
+          "/src/assets/images/photos/apartment3_4.jpg",
+          "/src/assets/images/photos/apartment3_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "advertisement": {
+        "contact": "caroline.brown@example.com",
+        "ad_date": "08-03-2023",
+        "real_estate_date": "01-06-2023",
+        "author": "Zurich Properties"
+      },
+      "address": {
+        "canton": "Zurich",
+        "zip": "8037",
+        "city": "Zürich",
+        "street": "Kalkbreitestrasse",
+        "postcode": "80"
+      },
+      "coordinates": {
+        "longitude": "47.38115",
+        "latitude": "8.52818"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-06-2023",
+        "type": "3-room apartment",
+        "description": "This apartment is located in a trendy neighbourhood close to many shops and restaurants.",
+        "surface": 30.0,
+        "rooms": 1.0,
+        "furnished": true,
+        "rent": 850,
+        "charges": 150,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 100,
+        "photos": [
+          "/src/assets/images/photos/apartment2_1.jpg",
+          "/src/assets/images/photos/apartment2_2.jpg",
+          "/src/assets/images/photos/apartment2_3.jpg",
+          "/src/assets/images/photos/apartment2_4.jpg",
+          "/src/assets/images/photos/apartment2_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "advertisement": {
+        "contact": "jane.doe@example.com",
+        "ad_date": "08-03-2023",
+        "real_estate_date": "15-04-2023",
+        "author": "Agency XYZ"
+      },
+      "address": {
+        "canton": "Bern",
+        "zip": "3011",
+        "city": "Bern",
+        "street": "Kochergasse",
+        "postcode": "9"
+      },
+      "coordinates": {
+        "longitude": "46.94798",
+        "latitude": " 7.44744"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "15-04-2023",
+        "type": "2-room apartment",
+        "description": "Beautifully renovated apartment in the heart of Bern.",
+        "surface": 50.0,
+        "rooms": 2.0,
+        "furnished": false,
+        "rent": 1000,
+        "charges": 250,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 150,
+        "photos": [
+          "/src/assets/images/photos/apartment3_1.jpg",
+          "/src/assets/images/photos/apartment2_2.jpg",
+          "/src/assets/images/photos/apartment2_3.jpg",
+          "/src/assets/images/photos/apartment5_4.jpg",
+          "/src/assets/images/photos/apartment2_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "advertisement": {
+        "contact": "john.doe@example.com",
+        "ad_date": "08-03-2023",
+        "real_estate_date": "01-05-2023",
+        "author": "Real Estate Inc."
+      },
+      "address": {
+        "canton": "Geneva",
+        "zip": "1207",
+        "city": "Geneva",
+        "street": "Rue de Vermont",
+        "postcode": "6"
+      },
+      "coordinates": {
+        "longitude": "46.20198",
+        "latitude": "6.14856"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-05-2023",
+        "type": "1-room apartment",
+        "description": "Sunny apartment in a great location near public transportation.",
+        "surface": 35.0,
+        "rooms": 1.0,
+        "furnished": true,
+        "rent": 900,
+        "charges": 200,
+        "flat_sharing": false,
+        "parking_available": false,
+        "parking_rent": null,
+        "photos": [
+          "/src/assets/images/photos/apartment1_1.jpg",
+          "/src/assets/images/photos/apartment1_2.jpg",
+          "/src/assets/images/photos/apartment1_3.jpg",
+          "/src/assets/images/photos/apartment1_4.jpg",
+          "/src/assets/images/photos/apartment1_5.jpg"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "advertisement": {
+        "contact": "jane.doe@example.com",
+        "ad_date": "08-03-2023",
+        "real_estate_date": "01-06-2023",
+        "author": "Agency ABC"
+      },
+      "address": {
+        "canton": "Zurich",
+        "zip": "8001",
+        "city": "Zurich",
+        "street": "Mühlegasse",
+        "postcode": "3"
+      },
+      "coordinates": {
+        "longitude": "47.37285",
+        "latitude": "8.53545"
+      },
+      "rental_properties": {
+        "status": "available",
+        "availability_date": "01-06-2023",
+        "type": "3-room apartment",
+        "description": "Spacious apartment with balcony and great views of the city.",
+        "surface": 80.0,
+        "rooms": 3.0,
+        "furnished": false,
+        "rent": 1500,
+        "charges": 300,
+        "flat_sharing": false,
+        "parking_available": true,
+        "parking_rent": 150,
+        "photos": [
+          "/src/assets/images/photos/apartment2_1.jpg",
+          "/src/assets/images/photos/apartment2_2.jpg",
+          "/src/assets/images/photos/apartment2_3.jpg",
+          "/src/assets/images/photos/apartment2_4.jpg",
+          "/src/assets/images/photos/apartment2_5.jpg"
+        ]
+      }
+    }
+  ]
 }
