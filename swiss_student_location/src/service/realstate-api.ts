@@ -1,5 +1,5 @@
 export default class RealStateApi {
-    public static async getRealStates(): Promise<any> {
+    public async getRealStates(): Promise<any> {
         return fetch(' http://localhost:3000/realestates')
             .then((response) => response.json())
             .then((responseJson) => {

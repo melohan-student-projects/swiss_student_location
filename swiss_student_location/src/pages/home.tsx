@@ -2,9 +2,18 @@ import {Image} from 'primereact/image';
 import RealStateApi from "../service/realstate-api";
 import {RealState} from "../model/RealState";
 import {Button} from "primereact/button";
+import {useEffect, useState} from "react";
 
-const realStates = await RealStateApi.getRealStates();
 export default function Home() {
+    const [realStates, setRealStates] = useState<RealState[]>([]);
+
+    useEffect(() => {
+        const realStatesApi =  new RealStateApi();
+        realStatesApi.getRealStates().then((realStates: RealState[]) => {
+            setRealStates(realStates);
+        });
+    }, []);
+
     return (
         <div>
             <section className="text-gray-600 body-font">
