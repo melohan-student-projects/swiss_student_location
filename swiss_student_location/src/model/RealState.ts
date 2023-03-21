@@ -31,5 +31,5 @@ export interface RealState {
         parking_available: boolean;
         parking_rent: number;
     };
-    photos: string[] | string;
+    photos: number[];
 }
