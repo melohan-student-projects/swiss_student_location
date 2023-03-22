@@ -21,8 +21,8 @@ export default function Detail() {
         });
     }, [id]);
     return (
-        <div>
-            <h2 className="text-gray-900 text-4xl mb-1 pb-2 font-medium title-font">Détails</h2>
+        <div className="mx-8">
+            <h2 className="text-gray-900 text-4xl mb-1 pb-3 font-medium title-font">Détails</h2>
             {apartment &&
                 <Apartment apartment={apartment}/>
             }
