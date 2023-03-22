@@ -1,4 +1,5 @@
 import {RealState} from "../model/RealState";
+import { Image } from 'primereact/image';
 
 export default function Apartment({apartment}: { apartment: RealState }) {
     return (
@@ -6,8 +7,8 @@ export default function Apartment({apartment}: { apartment: RealState }) {
             <h2 className="text-gray-900 text-2xl mb-1 bg-green-300 rounded-lg p-3 -mb-1 font-medium title-font">{apartment.rental_properties.description}</h2>
             <section
                 className="flex lg:w-1/3 md:w-1/2 bg-white p-5 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                <div className="flex flex-col">
-
+                <div className="flex flex-row justify-start">
+                    <Image src={apartment.photos[2]} alt={apartment.id} width="600" preview />
                     <table>
                         <tbody>
                         <tr>
@@ -38,6 +39,12 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                             <th>Charges</th>
                             <td>{apartment.rental_properties.charges}</td>
                         </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div className="flex flex-row justify-evenly">
+                    <table>
+                        <tbody>
                         <tr>
                             <th>Meublé</th>
                             <td>{apartment.rental_properties.furnished}</td>
@@ -50,6 +57,11 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                             <th>Parking</th>
                             <td>{apartment.rental_properties.parking_rent}</td>
                         </tr>
+
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
                         <tr>
                             <th>chambre</th>
                             <td>{apartment.rental_properties.rooms}</td>

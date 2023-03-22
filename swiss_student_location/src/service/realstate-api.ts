@@ -19,4 +19,14 @@ export default class RealStateApi {
                 console.error(error);
             });
     }
+    public async getPhotosByRealStateId(id: number): Promise<any> {
+        return fetch(' http://localhost:3000/realestates/' + id + '/photos')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                return responseJson;
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
 }
