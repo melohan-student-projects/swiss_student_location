@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  font-family: var(--font-family);
+    font-family: var(--font-family);
 }
 
 html {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }

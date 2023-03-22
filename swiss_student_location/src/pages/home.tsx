@@ -7,7 +7,7 @@ export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
 
     useEffect(() => {
-        const realStatesApi =  new RealStateApi();
+        const realStatesApi = new RealStateApi();
         realStatesApi.getRealStates().then((realStates: RealState[]) => {
             setRealStates(realStates);
         });
@@ -17,7 +17,7 @@ export default function Home() {
         <div>
             <h1>Bienvenue sur Swiss Student Location !</h1>
             <section className="text-gray-600 body-font">
-                    <Realstate realState={realStates}/>
+                <Realstate realState={realStates}/>
             </section>
         </div>
     );

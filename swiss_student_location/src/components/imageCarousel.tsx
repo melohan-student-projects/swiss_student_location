@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {RealState} from "../model/RealState";
 import RealStateApi from "../service/realstate-api";
+import {Image} from 'primereact/image';
 
 export default function ImageCarousel() {
     const [images, setImages] = useState<string[]>([]);
@@ -32,11 +33,11 @@ export default function ImageCarousel() {
     const onIndicator = (index: number) => {
         setActiveIndex(index);
     }
-
     return (
         <>
             <div className="carousel-image-container relative w-3/5 h-3/5 mr-6">
-                <img src={images[activeIndex]} alt="apartment" className="carousel-image" onLoad={onImageLoad}/>
+                <Image src={images[activeIndex]} alt="apartment" className="carousel-image" onLoad={onImageLoad}
+                       preview/>
                 <button className="carousel-button absolute top-50 left-4" onClick={onPrev}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                          stroke="currentColor" className="h-16 w-16 text-white stroke-5">
