@@ -12,6 +12,7 @@ import SignUp from "@pages/users/signUp";
 import SignIn from "@pages/users/signIn";
 import NotFound404 from "@pages/notFound404";
 import Layout from "@pages/layout";
+import Detail from '@pages/detail';
 
 export default function App() {
     return (
@@ -21,6 +22,7 @@ export default function App() {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/signin' element={<SignIn/>}/>
                     <Route path='/signup' element={<SignUp/>}/>
+                    <Route path='apartment/:id' element={<Detail/>}/>
                     <Route path='*' element={<NotFound404/>}/>
                 </Route>
             </Routes>
