@@ -1,5 +1,6 @@
 import {RealState} from "../model/RealState";
 import {Image} from 'primereact/image';
+import ImageCarousel from "@components/imageCarousel";
 
 export default function Apartment({apartment}: { apartment: RealState }) {
     return (
@@ -8,7 +9,7 @@ export default function Apartment({apartment}: { apartment: RealState }) {
             <section
                 className="flex lg:w-1/3 md:w-1/2 bg-white p-5 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
                 <div className="flex flex-row justify-start">
-                    <Image src={apartment.photos[0]} alt={apartment.id} width="600" preview/>
+                    <ImageCarousel />
                     <table>
                         <tbody>
                         <tr>
