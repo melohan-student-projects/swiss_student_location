@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 
 swiss_student_location/src/config/firebase.tsx
-swiss_student_location/src/assets/images/photos/*
