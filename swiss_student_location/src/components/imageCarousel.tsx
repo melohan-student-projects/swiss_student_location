@@ -35,7 +35,7 @@ export default function ImageCarousel() {
     }
     return (
         <>
-            <div className="carousel-image-container relative w-3/5 h-3/5 mr-6">
+            <div className="carousel-image-container relative w-3/6 h-3/6 mr-6">
                 <Image src={images[activeIndex]} alt="apartment" className="carousel-image" onLoad={onImageLoad}
                        preview/>
                 <button className="carousel-button absolute top-50 left-4" onClick={onPrev}>

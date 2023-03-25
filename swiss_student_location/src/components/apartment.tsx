@@ -9,7 +9,7 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                 className="flex lg:w-1/3 md:w-1/2 bg-white p-5 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
                 <div className="flex flex-row justify-start">
                     <ImageCarousel/>
-                    <table>
+                    <table className="table-auto">
                         <tbody>
                         <tr>
                             <th>Canton</th>
@@ -17,7 +17,7 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                         </tr>
                         <tr>
                             <th>Adresse</th>
-                            <td>{`${apartment.address.street},${apartment.address.zip} ${apartment.address.city}`}</td>
+                            <td>{`${apartment.address.street}, ${apartment.address.zip} ${apartment.address.city}`}</td>
                         </tr>
                         <tr>
                             <th>A proximité de</th>
@@ -29,62 +29,59 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                         </tr>
                         <tr>
                             <th>Surface</th>
-                            <td>{apartment.rental_properties.surface}</td>
+                            <td>{`${apartment.rental_properties.surface}.- (m2)`}</td>
                         </tr>
-                        <tr>
-                            <th>Loyer</th>
-                            <td>{apartment.rental_properties.rent}</td>
-                        </tr>
-                        <tr>
-                            <th>Charges</th>
-                            <td>{apartment.rental_properties.charges}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div className="flex flex-row justify-evenly">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th>Meublé</th>
-                            <td>{apartment.rental_properties.furnished}</td>
-                        </tr>
-                        <tr>
-                            <th>Baunderie</th>
-                            <td>{apartment.rental_properties.flat_sharing}</td>
-                        </tr>
-                        <tr>
-                            <th>Parking</th>
-                            <td>{apartment.rental_properties.parking_rent}</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
-                    <table>
-                        <tbody>
                         <tr>
                             <th>chambre</th>
                             <td>{apartment.rental_properties.rooms}</td>
                         </tr>
                         <tr>
-                            <th>Status</th>
-                            <td>{apartment.rental_properties.status}</td>
+                            <th>Loyer</th>
+                            <td>{`${apartment.rental_properties.rent}.- (CHF)`}</td>
                         </tr>
                         <tr>
-                            <th>Available</th>
-                            <td>{apartment.rental_properties.availability_date}</td>
+                            <th>Charges</th>
+                            <td>{`${apartment.rental_properties.charges}.- (CHF)`}</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
+                <table className="my-4 pb-4">
+                    <tbody>
+                    <tr>
+                        <th>Meublé</th>
+                        <td>{apartment.rental_properties.furnished ? 'Oui' : 'Non'}</td>
+                        <th>Baunderie</th>
+                        <td>{apartment.rental_properties.flat_sharing ? 'Oui' : 'Non'}</td>
+                        <th>Parking</th>
+                        <td>{apartment.rental_properties.parking_available ? 'Oui' : 'Non'}</td>
+                        <th>Available</th>
+                        <td>{apartment.rental_properties.availability_date}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div className="flex flex-col lg:flex-row justify-between p-3 mr-7 border-gray-200 border-t-2">
+                    <div className="flex flex-col pt-3">
+                        <h2 className="text-gray-900 text-xl font-medium title-font">Description</h2>
+                        <p>{apartment.rental_properties.description}</p>
+                    </div>
+                    <div className="flex flex-col pt-3">
+                        <h2 className="text-gray-900 text-xl font-medium title-font">Information</h2>
+                        <p>
+                            <span>{apartment.advertisement.author}</span><br/>
+                            <span>{apartment.advertisement.contact}</span><br/>
+                            <span>{`${apartment.address.zip} ${apartment.address.city}`}</span><br/>
+                        </p>
+                        <div className="my-3" >
+                            <button
+                                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                                Contact
+                            </button>
+                        </div>
 
-                <ul>
-                    <li>{apartment.advertisement.contact}</li>
-                    <li>{apartment.advertisement.ad_date}</li>
-                    <li>{apartment.advertisement.author}</li>
-                    <li>{apartment.coordinates.latitude}</li>
-                    <li>{apartment.coordinates.longitude}</li>
-                </ul>
+                    </div>
+                </div>
+
             </section>
         </>
     )
