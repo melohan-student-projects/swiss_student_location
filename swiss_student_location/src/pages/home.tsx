@@ -5,6 +5,7 @@ import Realstate from "@components/realstate";
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import OfferChecklist from "@components/offerChecklist";
 import CantonDropdown from "@components/cantonDropdown";
+import CityDropdown from "@components/cityDropdown";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
@@ -26,7 +27,10 @@ export default function Home() {
                             <span className="vertical-align-middle">Zone géographique</span>
                         </div>
                     } >
-                  <CantonDropdown/>
+                    <div className="flex flex-wrap justify-content-center gap-3">
+                        <h3 className="text-1xl pt-3">Dans le canton de ..</h3><CantonDropdown/>
+                        <h3 className="text-1xl pt-3">Dans la ville/le village de ..</h3><CityDropdown/>
+                    </div>
                 </AccordionTab>
                 <AccordionTab
                     header={
