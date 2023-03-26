@@ -17,7 +17,7 @@ specifiers:
   postcss: ^8.4.21
   primeflex: ^3.3.0
   primeicons: ^6.0.1
-  primereact: ^8.7.3
+  primereact: ^9.2.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.8.2
@@ -31,7 +31,7 @@ dependencies:
   firebase: 9.17.1
   primeflex: 3.3.0
   primeicons: 6.0.1
-  primereact: 8.7.3_ft3yxljkuufbrk5sastnye3lky
+  primereact: 9.2.1_ft3yxljkuufbrk5sastnye3lky
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.8.2_biqbaboplfbrettd7655fr4n2y
@@ -3980,8 +3980,8 @@ packages:
     resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
     dev: false
 
-  /primereact/8.7.3_ft3yxljkuufbrk5sastnye3lky:
-    resolution: {integrity: sha512-BjlIOOsVcUqX9edn7HewN/U28aUqREOvPP3fnpk7X6S7k5JTM570Dm7Z/TEPH1x/Mko1NL6iDaYWnkjKiBrtPQ==}
+  /primereact/9.2.1_ft3yxljkuufbrk5sastnye3lky:
+    resolution: {integrity: sha512-7jQQgftWuRAseYtrGwtakqM4GEBDLWeTSzwrFrRKWCdG3uGE4JdVNwFW5QzlOQlZJKcASXlsNx/YBW07McuvRQ==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
       primeicons: ^5.0.0 || ^6.0.0
