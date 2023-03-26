@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 
 export default function Realstate({realState}: { realState: RealState[] }) {
     return (
-
         <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
                 {realState.map((realState: RealState) => {
