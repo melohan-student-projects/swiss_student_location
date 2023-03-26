@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Checkbox} from 'primereact/checkbox';
 
-export default function OfferChecklistForm() {
+export default function OfferChecklist() {
     const offerList = [
         "Meublé",
         "Cuisine équipées (cuisinière, réfrigérateur, etc)",
@@ -17,15 +17,15 @@ export default function OfferChecklistForm() {
         "Accessibilité (pour personne à mobilité réduite)"
     ];
 
-    const [selectedOffers, setSelectedOffers] = useState([]);
+    const [selectedOffers, setSelectedOffers] = useState<string[]>([]);
 
-    const onOfferChange = (e: any) => {
+    const onOfferChange = (e: { checked: boolean; value: string }) => {
         let updatedOffers = [...selectedOffers];
 
         if (e.checked) {
             updatedOffers.push(e.value);
         } else {
-            updatedOffers = updatedOffers.filter(offer => offer !== e.value);
+            updatedOffers = updatedOffers.filter((offer) => offer !== e.value);
         }
 
         setSelectedOffers(updatedOffers);
@@ -33,7 +33,7 @@ export default function OfferChecklistForm() {
     return (
         <div className="card">
             <div className="flex flex-wrap justify-content-center gap-3">
-                {offerList.map((offer:String, index:number) => (
+                {offerList.map((offer, index) => (
                     <div key={index} className="flex align-items-center w-1/3">
                         <Checkbox
                             inputId={`offer-${index}`}
