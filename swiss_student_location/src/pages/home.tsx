@@ -7,6 +7,7 @@ import OfferChecklist from "@components/offerChecklist";
 import CantonDropdown from "@components/cantonDropdown";
 import CityDropdown from "@components/cityDropdown";
 import InstitutionDropdown from "@components/InstitutionDropdown";
+import RoomSize from "@components/roomSize";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
@@ -49,15 +50,7 @@ export default function Home() {
                             <span className="vertical-align-middle">Bien immobilier</span>
                         </div>
                     }>
-                    <p className="m-0">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa
-                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                        enim ipsam voluptatem quia voluptas
-                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                        voluptatem sequi nesciunt.
-                        Consectetur, adipisci velit, sed quia non numquam eius modi.
-                    </p>
+                   <RoomSize/>
                 </AccordionTab>
                 <AccordionTab
                     header={
