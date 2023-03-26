@@ -1,6 +1,6 @@
 import React from "react";
 import { RealState } from "../model/RealState";
-export function Apartment_description({apartment}: { apartment: RealState }) {
+export function ApartmentDescription({apartment}: { apartment: RealState }) {
   return <div className="flex flex-col lg:flex-row justify-between p-3 mr-7 border-gray-200 border-t-2">
                     <div className="flex flex-col pt-3">
                         <h2 className="text-gray-900 text-xl font-medium title-font">Description</h2>

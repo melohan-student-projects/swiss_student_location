@@ -1,4 +1,4 @@
-import { Apartment_description } from './apartment_description';
+import { ApartmentDescription } from './apartmentDescription';
 import {RealState} from "../model/RealState";
 import ImageCarousel from "@components/imageCarousel";
 
@@ -61,7 +61,7 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                     </tr>
                     </tbody>
                 </table>
-               <Apartment_description apartment={apartment}/>
+               <ApartmentDescription apartment={apartment}/>
             </section>
         </>
     )
