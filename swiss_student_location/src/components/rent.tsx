@@ -1,0 +1,47 @@
+import React, { useState } from "react";
+import { Slider } from "primereact/slider";
+
+export default function Rent() {
+    const [rent, setRent] = useState<[number, number]>([200, 2000]);
+
+    const handleChange = (e: any) => {
+        setRent(e.value);
+    };
+
+    const handleClick = (e: any) => {
+        const { left, width } = e.target.getBoundingClientRect();
+        const newValue = e.clientX - left;
+        const ratio = newValue / width;
+        const range = 2000 - 100;
+        const selectedValue = Math.round(100 + ratio * range);
+
+        if (Math.abs(selectedValue - rent[0]) < Math.abs(selectedValue - rent[1])) {
+            setRent([selectedValue, rent[1]]);
+        } else {
+            setRent([rent[0], selectedValue]);
+        }
+    };
+
+    return (
+
+        <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-6">
+            <div className="font-bold block mb-2 p-3">Loyer</div>
+           <div>
+               <div className="w-14rem" onClick={handleClick}>
+                   <Slider
+                       value={rent}
+                       onChange={handleChange}
+                       range
+                       min={100}
+                       max={2000}
+                       step={20}
+                   />
+               </div>
+               <div>
+                   {`${rent[0]} CHF (min.)  - ${rent[1]}CHF (max.)`}
+               </div>
+           </div>
+            <div className="font-bold block mb-2 p-3">Charges inclus dans le loyer</div>
+        </div>
+    );
+}

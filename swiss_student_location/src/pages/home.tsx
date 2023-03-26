@@ -8,6 +8,7 @@ import CantonDropdown from "@components/cantonDropdown";
 import CityDropdown from "@components/cityDropdown";
 import InstitutionDropdown from "@components/InstitutionDropdown";
 import RoomSize from "@components/roomSize";
+import Rent from "@components/rent";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
@@ -51,6 +52,7 @@ export default function Home() {
                         </div>
                     }>
                    <RoomSize/>
+                    <Rent/>
                 </AccordionTab>
                 <AccordionTab
                     header={

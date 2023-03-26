@@ -6,8 +6,7 @@ export default function RoomSize() {
     const [rooms, setRooms] = useState<number | null>(1.5);
 
     return (
-        <div className="flex-auto">
-            <div className="flex flex-wrap justify-content-center gap-3">
+            <div className="flex flex-wrap justify-content-start gap-5">
                 <label htmlFor="romeSize" className="font-bold block mb-2 p-3">Room size</label>
                 <InputNumber inputId="roomSize" value={rooms}
                              onValueChange={(e: InputNumberValueChangeEvent) => {
@@ -18,6 +17,5 @@ export default function RoomSize() {
                              mode="decimal"
                              minFractionDigits={1} maxFractionDigits={1}/>
             </div>
-        </div>
     );
 }
