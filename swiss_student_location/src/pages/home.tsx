@@ -9,6 +9,7 @@ import CityDropdown from "@components/cityDropdown";
 import InstitutionDropdown from "@components/InstitutionDropdown";
 import RoomSize from "@components/roomSize";
 import Rent from "@components/rent";
+import RealstateTypes from "@components/typeRealstate";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
@@ -51,6 +52,7 @@ export default function Home() {
                             <span className="vertical-align-middle">Bien immobilier</span>
                         </div>
                     }>
+                    <RealstateTypes/>
                    <RoomSize/>
                     <Rent/>
                 </AccordionTab>
