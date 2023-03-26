@@ -16,13 +16,10 @@ export default function RealstateTypes() {
 
 
     return (
-        <div className="flex flex-wrap justify-content-start pb-5 gap-5">
-            <div className="font-bold block mb-2 p-3">Type de bien</div>
-            <MultiSelect value={type}
-                         onChange={(e: MultiSelectChangeEvent) => setType(e.value)}
-                         options={realEstateTypes} display="chip" optionLabel="name"
-                         placeholder="Sélectionner un type de bien immobilier" maxSelectedLabels={3}
-                         className="w-full md:w-20rem"/>
-        </div>
+        <MultiSelect value={type}
+                     onChange={(e: MultiSelectChangeEvent) => setType(e.value)}
+                     options={realEstateTypes} display="chip" optionLabel="name"
+                     placeholder="Sélectionner un type de bien immobilier" maxSelectedLabels={3}
+                     className="w-full md:w-20rem"/>
     );
 }

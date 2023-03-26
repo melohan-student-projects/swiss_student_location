@@ -52,8 +52,16 @@ export default function Home() {
                             <span className="vertical-align-middle">Bien immobilier</span>
                         </div>
                     }>
-                    <RealstateTypes/>
-                    <RoomSize/>
+                    <div className="flex flex-row justify-content-start gap-3">
+                        <div className="text-1xl flex flex-row">
+                            <h3 className="font-bold block mb-2 p-3 ">Type de bien immobilier</h3>
+                            <RealstateTypes/>
+                        </div>
+                        <div className="text-1xl flex flex-row">
+                            <h3 className="font-bold block mb-2 p-3">Taille de la chambre</h3>
+                            <RoomSize/>
+                        </div>
+                    </div>
                     <Rent/>
                 </AccordionTab>
                 <AccordionTab
