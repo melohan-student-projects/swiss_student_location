@@ -1,5 +1,5 @@
-import React, { useState, ChangeEvent } from "react";
-import { MultiSelect } from 'primereact/multiselect';
+import React, { useState } from "react";
+import { MultiSelect, MultiSelectChangeEvent } from 'primereact/multiselect';
 import { RealEstateType } from "../model/RealStateType";
 
 export default function RealstateTypes() {
@@ -18,7 +18,9 @@ export default function RealstateTypes() {
     return (
         <div className="flex flex-wrap justify-content-start pb-5 gap-5">
             <div className="font-bold block mb-2 p-3">Type de bien</div>
-            <MultiSelect value={type} onChange={(e: ChangeEvent<{ value: RealEstateType[] }>) => setType(e.target.value)} options={realEstateTypes} display="chip" optionLabel="name"
+            <MultiSelect value={type}
+                         onChange={(e: MultiSelectChangeEvent) => setType(e.value)}
+                         options={realEstateTypes} display="chip" optionLabel="name"
                          placeholder="Sélectionner un type de bien immobilier" maxSelectedLabels={3} className="w-full md:w-20rem" />
         </div>
     );

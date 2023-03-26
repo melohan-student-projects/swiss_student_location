@@ -25,7 +25,7 @@ export default function OfferChecklist() {
         if (e.checked) {
             updatedOffers.push(e.value);
         } else {
-            updatedOffers = updatedOffers.filter((offer) => offer !== e.value);
+            updatedOffers = updatedOffers.filter(offer => offer !== e.value);
         }
 
         setSelectedOffers(updatedOffers);
