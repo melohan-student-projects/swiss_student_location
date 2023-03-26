@@ -53,7 +53,7 @@ export default function Home() {
                         </div>
                     }>
                     <RealstateTypes/>
-                   <RoomSize/>
+                    <RoomSize/>
                     <Rent/>
                 </AccordionTab>
                 <AccordionTab

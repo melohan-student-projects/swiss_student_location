@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Slider } from "primereact/slider";
+import React, {useState} from "react";
+import {Slider} from "primereact/slider";
 
 export default function Rent() {
     const [rent, setRent] = useState<[number, number]>([200, 2000]);
@@ -9,7 +9,7 @@ export default function Rent() {
     };
 
     const handleClick = (e: any) => {
-        const { left, width } = e.target.getBoundingClientRect();
+        const {left, width} = e.target.getBoundingClientRect();
         const newValue = e.clientX - left;
         const ratio = newValue / width;
         const range = 2000 - 100;
@@ -26,21 +26,21 @@ export default function Rent() {
 
         <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-5">
             <div className="font-bold block mb-2 p-3">Loyer</div>
-           <div>
-               <div className="w-14rem" onClick={handleClick}>
-                   <Slider
-                       value={rent}
-                       onChange={handleChange}
-                       range
-                       min={100}
-                       max={2000}
-                       step={20}
-                   />
-               </div>
-               <div>
-                   {`${rent[0]} CHF (min.)  - ${rent[1]}CHF (max.)`}
-               </div>
-           </div>
+            <div>
+                <div className="w-14rem" onClick={handleClick}>
+                    <Slider
+                        value={rent}
+                        onChange={handleChange}
+                        range
+                        min={100}
+                        max={2000}
+                        step={20}
+                    />
+                </div>
+                <div>
+                    {`${rent[0]} CHF (min.)  - ${rent[1]}CHF (max.)`}
+                </div>
+            </div>
             <div className="font-bold block mb-2 p-3">Charges inclus dans le loyer</div>
         </div>
     );
