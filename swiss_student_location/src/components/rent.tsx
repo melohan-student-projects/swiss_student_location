@@ -24,7 +24,7 @@ export default function Rent() {
 
     return (
 
-        <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-6">
+        <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-5">
             <div className="font-bold block mb-2 p-3">Loyer</div>
            <div>
                <div className="w-14rem" onClick={handleClick}>
