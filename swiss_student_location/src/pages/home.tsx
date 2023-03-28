@@ -10,16 +10,36 @@ import InstitutionDropdown from "@components/InstitutionDropdown";
 import RoomSize from "@components/roomSize";
 import Rent from "@components/rent";
 import RealstateTypes from "@components/typeRealstate";
+import {Button} from "primereact/button";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
+    const [rent, setRent] = useState<[number, number]>([200, 4000]);
+    const [filterRealStates, setFilterRealStates] = useState<string>("");
+    const realStatesApi = new RealStateApi();
+
+    const handleRentChange = (newRent: [number, number]) => {
+        setRent(newRent);
+    };
+
+    function handleSearch() {
+        const [minRent, maxRent] = rent;
+        if (minRent < maxRent) {
+            setFilterRealStates(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
+        }
+    }
 
     useEffect(() => {
-        const realStatesApi = new RealStateApi();
-        realStatesApi.getRealStates().then((realStates: RealState[]) => {
-            setRealStates(realStates);
-        });
-    }, []);
+        if (filterRealStates) {
+            realStatesApi.getRealStatesFiltered(filterRealStates).then((data) => {
+                setRealStates(data);
+            });
+        }else{
+            realStatesApi.getRealStates().then((data) => {
+                setRealStates(data);
+            });
+        }
+    }, [filterRealStates]);
 
     return (
         <div>
@@ -62,7 +82,7 @@ export default function Home() {
                             <RoomSize/>
                         </div>
                     </div>
-                    <Rent/>
+                    <Rent onRentChange={handleRentChange}/>
                 </AccordionTab>
                 <AccordionTab
                     header={
@@ -73,10 +93,10 @@ export default function Home() {
                     <OfferChecklist/>
                 </AccordionTab>
             </Accordion>
-            <div className="flex flex-wrap justify-center">
-                <button
-                    className="flex mx-auto mt-3 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Chercher
-                </button>
+            <div className="card flex flex-wrap px-2 py-5 -my-5">
+                <Button className="flex mx-auto mt-3 border-0 py-2.5 px-8 focus:outline-none rounded text-lg"
+                        label='Chercher' icon="pi pi-check" onClick={handleSearch}>
+                </Button>
             </div>
 
             <section className="text-gray-600 body-font">
