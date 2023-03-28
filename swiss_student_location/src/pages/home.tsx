@@ -73,6 +73,12 @@ export default function Home() {
                     <OfferChecklist/>
                 </AccordionTab>
             </Accordion>
+            <div className="flex flex-wrap justify-center">
+                <button
+                    className="flex mx-auto mt-3 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Chercher
+                </button>
+            </div>
+
             <section className="text-gray-600 body-font">
                 <Realstate realState={realStates}/>
             </section>
