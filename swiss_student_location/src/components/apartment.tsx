@@ -5,10 +5,10 @@ import ImageCarousel from "@components/imageCarousel";
 export default function Apartment({apartment}: { apartment: RealState }) {
     return (
         <>
-            <h2 className="text-white pl-5 text-2xl mb-1 bg-primaryColor rounded-lg p-3 -mb-1 font-medium title-font">{apartment.rental_properties.description}</h2>
+            <h2 className="pl-5 text-2xl mb-1 bg-gray-100 text-gray-900 rounded-lg p-3 -mb-1 font-medium title-font">{apartment.rental_properties.description}</h2>
             <section
                 className="flex lg:w-1/3 md:w-1/2 bg-white p-5 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                <div className="flex flex-row justify-start">
+                <div className="flex flex-col lg:flex-row justify-start">
                     <ImageCarousel/>
                     <table className="table-auto">
                         <tbody>
@@ -44,23 +44,25 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                             <th>Charges</th>
                             <td>{`${apartment.rental_properties.charges}.- (CHF)`}</td>
                         </tr>
+                        <tr>
+                            <th>Meublé</th>
+                            <td>{apartment.rental_properties.furnished ? 'Oui' : 'Non'}</td>
+                        </tr>
+                        <tr>
+                            <th>Baunderie</th>
+                            <td>{apartment.rental_properties.flat_sharing ? 'Oui' : 'Non'}</td>
+                        </tr>
+                        <tr>
+                            <th>Parking</th>
+                            <td>{apartment.rental_properties.parking_available ? 'Oui' : 'Non'}</td>
+                        </tr>
+                        <tr>
+                            <th>Available</th>
+                            <td>{apartment.rental_properties.availability_date}</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
-                <table className="my-4 pb-4">
-                    <tbody>
-                    <tr>
-                        <th>Meublé</th>
-                        <td>{apartment.rental_properties.furnished ? 'Oui' : 'Non'}</td>
-                        <th>Baunderie</th>
-                        <td>{apartment.rental_properties.flat_sharing ? 'Oui' : 'Non'}</td>
-                        <th>Parking</th>
-                        <td>{apartment.rental_properties.parking_available ? 'Oui' : 'Non'}</td>
-                        <th>Available</th>
-                        <td>{apartment.rental_properties.availability_date}</td>
-                    </tr>
-                    </tbody>
-                </table>
                 <ApartmentDescription apartment={apartment}/>
             </section>
         </>
