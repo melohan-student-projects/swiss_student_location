@@ -14,6 +14,7 @@ import {Button} from "primereact/button";
 import {Canton} from "../model/Canton";
 import {City} from "../model/City";
 import {Institution} from "../model/Institution";
+import {RealEstateType} from "../model/RealStateType";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
@@ -22,8 +23,9 @@ export default function Home() {
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
     const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
+    const [type, setType] = useState<RealEstateType[] | null>(null);
     const [filterRealStates, setFilterRealStates] = useState<string>("");
-    let filter:any = []
+    let filter: any = []
     const realStatesApi = new RealStateApi();
 
     const handleRentChange = (newRent: [number, number]) => {
@@ -41,6 +43,9 @@ export default function Home() {
     const handleInstitutionChange = (institution: Institution | null): void => {
         setSelectedInstitution(institution);
     };
+    const handleTypeChange = (selectedTypes: RealEstateType[] | null) => {
+        setType(selectedTypes);
+    }
 
 
     function handleSearch() {
@@ -51,6 +56,11 @@ export default function Home() {
         if (selectedCanton) filter.push(`address.canton=${selectedCanton.name}`)
         if (selectedCity) filter.push(`address.city=${selectedCity.name}`)
         if (selectedInstitution) filter.push(`address.city=${selectedInstitution.location}`)
+        if (type) {
+            type.forEach((t) => {
+                filter.push(`rental_properties.type=${t.name.toLowerCase()}`)
+            })
+        }
         if (filter) {
             setFilterRealStates(filter.join('&'))
         }
@@ -62,7 +72,7 @@ export default function Home() {
             realStatesApi.getRealStatesFiltered(filterRealStates).then((data) => {
                 setRealStates(data);
             });
-        }else{
+        } else {
             realStatesApi.getRealStates().then((data) => {
                 setRealStates(data);
             });
@@ -103,7 +113,7 @@ export default function Home() {
                     <div className="flex flex-row justify-content-start gap-3">
                         <div className="text-1xl flex flex-row">
                             <h3 className="font-bold block mb-2 p-3 ">Type de bien immobilier</h3>
-                            <RealstateTypes/>
+                            <RealstateTypes onTypeChange={handleTypeChange}/>
                         </div>
                         <div className="text-1xl flex flex-row">
                             <h3 className="font-bold block mb-2 p-3">Taille de la chambre</h3>
