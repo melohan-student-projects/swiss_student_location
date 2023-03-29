@@ -98,10 +98,10 @@ pnpm run test
 │   ├── components
 │   ├── config
 │   ├── data
-│   ├── main.tsx
-│   ├── model
+│   ├── Main.tsx
+│   ├── models
 │   ├── pages
-│   ├── service
+│   ├── services
 │   └── vite-env.d.ts
 ├── tailwind.config.cjs
 ├── tests

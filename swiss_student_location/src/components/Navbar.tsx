@@ -3,6 +3,10 @@ import '/src/assets/style/navbar.css';
 import {Link} from "react-router-dom";
 import {Button} from 'primereact/button';
 
+/**
+ * Top navigation bar
+ * @constructor
+ */
 export default function Navbar() {
     return (
         <div className={'navbar_container bg-primaryColor py-2'}>
@@ -29,14 +33,14 @@ export default function Navbar() {
                 <ul className="flex grow justify-end flex-wrap items-center gap-2">
                     <li>
                         <Link to={'/signin'} className={'navbar_link'}>
-                            <Button label="Sign in"
-                                    className="p-button-rounded text-white bg-primaryColor hover:bg-blue-700 border-0 p-button-lg px-4 py-3 flex items-center transition duration-150 ease-in-out"/>
+                            <Button label="Connexion"
+                                    className=" text-white bg-primaryColor hover:bg-blue-400 border-0 p-button-lg px-4 py-3 flex items-center transition duration-150 ease-in-out"/>
                         </Link>
                     </li>
                     <li>
                         <Link to={'/signup'} className={'navbar_link'}>
                             <Button label="Sign up"
-                                    className="p-button-rounded text-white bg-primaryColor hover:bg-blue-700 p-button-lg px-4 py-3 flex items-center transition duration-150 ease-in-out"/>
+                                    className="text-white bg-primaryColor border-0 hover:bg-blue-400 p-button-lg px-4 py-3 flex items-center transition duration-150 ease-in-out"/>
                         </Link>
                     </li>
                 </ul>

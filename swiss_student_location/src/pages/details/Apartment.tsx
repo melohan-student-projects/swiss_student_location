@@ -1,7 +1,12 @@
-import {ApartmentDescription} from './apartmentDescription';
-import {RealState} from "../model/RealState";
-import ImageCarousel from "@components/imageCarousel";
+import {Description} from '@pages/details/Description';
+import {RealState} from "@models/RealStateType";
+import ImageCarousel from "@components/ImageCarousel";
 
+/**
+ * This is the top section of the search page.
+ * @param apartment
+ * @constructor
+ */
 export default function Apartment({apartment}: { apartment: RealState }) {
     return (
         <>
@@ -33,7 +38,7 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                             <td>{`${apartment.rental_properties.surface}.- (m2)`}</td>
                         </tr>
                         <tr>
-                            <th>chambre</th>
+                            <th>Chambre</th>
                             <td>{apartment.rental_properties.rooms}</td>
                         </tr>
                         <tr>
@@ -49,7 +54,7 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                             <td>{apartment.rental_properties.furnished ? 'Oui' : 'Non'}</td>
                         </tr>
                         <tr>
-                            <th>Baunderie</th>
+                            <th>Collocation</th>
                             <td>{apartment.rental_properties.flat_sharing ? 'Oui' : 'Non'}</td>
                         </tr>
                         <tr>
@@ -57,13 +62,13 @@ export default function Apartment({apartment}: { apartment: RealState }) {
                             <td>{apartment.rental_properties.parking_available ? 'Oui' : 'Non'}</td>
                         </tr>
                         <tr>
-                            <th>Available</th>
+                            <th>Disponible</th>
                             <td>{apartment.rental_properties.availability_date}</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <ApartmentDescription apartment={apartment}/>
+                <Description apartment={apartment}/>
             </section>
         </>
     )

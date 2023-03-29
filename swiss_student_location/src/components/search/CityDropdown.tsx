@@ -1,10 +1,16 @@
 import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
-import {City} from "../model/City";
+import {City} from "@models/City";
 
 type CityDropdownProps = {
     onCityChange: (city: City | null) => void;
 };
+
+/**
+ * Drop down of cities.
+ * @param onCityChange
+ * @constructor
+ */
 export default function CityDropdown({ onCityChange }: CityDropdownProps) {
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
     const cities: City[] = [
@@ -61,7 +67,7 @@ export default function CityDropdown({ onCityChange }: CityDropdownProps) {
         <div className="card flex justify-content-center text-gray-600">
             <div className="card flex justify-content-center">
                 <Dropdown value={selectedCity} onChange={handleChange}
-                          options={cities} optionLabel="name" placeholder="Select a City"
+                          options={cities} optionLabel="name" placeholder="Ville"
                           filter valueTemplate={selectedCityTemplate} itemTemplate={cityOptionTemplate}
                           className="w-full md:w-14rem"/>
             </div>

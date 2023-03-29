@@ -4,6 +4,12 @@ import {Slider} from "primereact/slider";
 type ChildComponentProps = {
     onRentChange: (newRent: [number, number]) => void;
 };
+
+/**
+ * Rent component in the search view. It allows to define a rent between two ranges
+ * @param onRentChange
+ * @constructor
+ */
 export default function Rent({ onRentChange }: ChildComponentProps) {
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
 
@@ -29,7 +35,6 @@ export default function Rent({ onRentChange }: ChildComponentProps) {
     };
 
     return (
-
         <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-5 text-gray-600">
             <div className="font-semi-bold block mb-2 p-3">Loyer</div>
             <div>

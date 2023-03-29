@@ -1,9 +1,15 @@
-import {RealState} from "../model/RealState";
 import {Button} from "primereact/button";
 import {Image} from 'primereact/image';
 import {Link} from "react-router-dom";
 
-export default function Realstate({realState}: { realState: RealState[] }) {
+import {RealState} from "@/models/RealState";
+
+/**
+ * Miniature of a realestate
+ * @param realState
+ * @constructor
+ */
+export default function Miniature({realState}: { realState: RealState[] }) {
     return (
         <div className="container px-5 py-24 mx-auto bg-gray-50 rounded-lg">
             <div className="flex flex-wrap -m-4">

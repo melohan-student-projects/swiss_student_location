@@ -19,6 +19,10 @@ const validationSchema = Yup.object().shape({
         .oneOf([Yup.ref("password"), ''], "Les mots de passe ne correspondent pas."),
 });
 
+/**
+ * SignUp form
+ * @constructor
+ */
 export const SignUp = () => {
     const [errorMessage, setErrorMessage] = useState("");
     let navigate = useNavigate();

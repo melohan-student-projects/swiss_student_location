@@ -1,4 +1,4 @@
-import {SignUp} from "@components/firebase/signUp";
+import {SignUp} from "@components/firebase/SignUp";
 
 export default function SignIn() {
     return (

@@ -1,9 +1,15 @@
 import {useEffect, useState} from "react";
-import {RealState} from "../model/RealState";
-import RealStateApi from "../service/realstate-api";
 import {Image} from 'primereact/image';
 
+import {RealState} from "@models/RealState";
+import RealStateApi from "../services/realstate-api";
+
+/**
+ * Carousel of a details page
+ * @constructor
+ */
 export default function ImageCarousel() {
+
     const [images, setImages] = useState<string[]>([]);
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [visible, setVisible] = useState<boolean>(false);

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {MultiSelect, MultiSelectChangeEvent} from 'primereact/multiselect';
-import {RealEstateType} from "../model/RealStateType";
+
+import {RealEstateType} from "@models/RealStateType";
 
 interface RealstateTypesProps {
     onTypeChange: (selectedTypes: RealEstateType[] | null) => void;
@@ -31,7 +32,7 @@ export default function RealstateTypesRealstateTypes({ onTypeChange }: Realstate
                          onTypeChange(e.value);
                      }}
                      options={realEstateTypes} display="chip" optionLabel="name"
-                     placeholder="Sélectionner un type de bien immobilier" maxSelectedLabels={3}
+                     placeholder="Selectionner un type de bien immobilier" maxSelectedLabels={3}
                      className="w-full md:w-20rem text-gray-600"/>
     );
 }
