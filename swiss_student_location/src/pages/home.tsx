@@ -12,11 +12,13 @@ import Rent from "@components/rent";
 import RealstateTypes from "@components/typeRealstate";
 import {Button} from "primereact/button";
 import {Canton} from "../model/Canton";
+import {City} from "../model/City";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
+    const [selectedCity, setSelectedCity] = useState<City | null>(null);
     const [filterRealStates, setFilterRealStates] = useState<string>("");
     let filter:any = []
     const realStatesApi = new RealStateApi();
@@ -24,7 +26,9 @@ export default function Home() {
     const handleRentChange = (newRent: [number, number]) => {
         setRent(newRent);
     };
-
+    const handleCityChange = (city: City | null): void => {
+        setSelectedCity(city);
+    };
     const handleCantonChange = (canton: Canton | null): void => {
         setSelectedCanton(canton);
     };
@@ -34,6 +38,7 @@ export default function Home() {
         const [minRent, maxRent] = rent;
         if (minRent < maxRent) filter.push(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
         if (selectedCanton) filter.push(`address.canton=${selectedCanton.name}`)
+        if (selectedCity) filter.push(`address.city=${selectedCity.name}`)
         if (filter) {
             setFilterRealStates(filter.join('&'))
         }
@@ -69,7 +74,7 @@ export default function Home() {
                         </div>
                         <div className="text-1xl pt-3 flex flex-row">
                             <h3 className="text-1xl p-3">Dans la ville/le village de ..</h3>
-                            <CityDropdown/>
+                            <CityDropdown onCityChange={handleCityChange}/>
                         </div>
                         <div className="text-1xl pt-3 flex flex-row">
                             <h3 className="text-1xl p-3">Dans le quartier de .. </h3>

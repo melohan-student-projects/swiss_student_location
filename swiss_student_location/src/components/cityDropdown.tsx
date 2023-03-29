@@ -1,9 +1,11 @@
 import React, {useState} from "react";
-import {Dropdown, DropdownChangeParams} from 'primereact/dropdown';
+import {Dropdown} from 'primereact/dropdown';
 import {City} from "../model/City";
 
-
-export default function CityDropdown() {
+type CityDropdownProps = {
+    onCityChange: (city: City | null) => void;
+};
+export default function CityDropdown({ onCityChange }: CityDropdownProps) {
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
     const cities: City[] = [
         {name: 'Lausanne', canton: 'Vaud', npa: 1000},
@@ -39,9 +41,15 @@ export default function CityDropdown() {
                 </div>
             );
         }
-
         return <span>{props.placeholder}</span>;
     };
+
+    const handleChange = (e: { value: City | null }): void => {
+        const newCity = e.value as City;
+        setSelectedCity(newCity);
+        onCityChange(newCity);
+    };
+
     const cityOptionTemplate = (option: City) => {
         return (
             <div className="flex align-items-center">
@@ -52,7 +60,7 @@ export default function CityDropdown() {
     return (
         <div className="card flex justify-content-center">
             <div className="card flex justify-content-center">
-                <Dropdown value={selectedCity} onChange={(e: DropdownChangeParams) => setSelectedCity(e.value as City)}
+                <Dropdown value={selectedCity} onChange={handleChange}
                           options={cities} optionLabel="name" placeholder="Select a City"
                           filter valueTemplate={selectedCityTemplate} itemTemplate={cityOptionTemplate}
                           className="w-full md:w-14rem"/>
