@@ -118,7 +118,7 @@ export default function Home() {
                             <span className="vertical-align-middle text-gray-900">Bien immobilier</span>
                         </div>
                     }>
-                    <div className="flex flex-row justify-content-start gap-3">
+                    <div className="flex flex-wrap justify-content-start gap-3">
                         <div className="text-1xl flex flex-row">
                             <h3 className="font-semi-bold block mb-2 p-3 text-gray-600">Type de bien immobilier</h3>
                             <RealstateTypes onTypeChange={handleTypeChange}/>
