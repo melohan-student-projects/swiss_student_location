@@ -1,18 +1,24 @@
 import React, {useState} from "react";
 import {Slider} from "primereact/slider";
 
-export default function Rent() {
-    const [rent, setRent] = useState<[number, number]>([200, 2000]);
+type ChildComponentProps = {
+    onRentChange: (newRent: [number, number]) => void;
+};
+export default function Rent({ onRentChange }: ChildComponentProps) {
+    const [rent, setRent] = useState<[number, number]>([200, 4000]);
+
 
     const handleChange = (e: any) => {
-        setRent(e.value);
+        const newRent = e.value;
+        setRent(newRent);
+        onRentChange(newRent);
     };
 
     const handleClick = (e: any) => {
         const {left, width} = e.target.getBoundingClientRect();
         const newValue = e.clientX - left;
         const ratio = newValue / width;
-        const range = 2000 - 100;
+        const range = 4000 - 100;
         const selectedValue = Math.round(100 + ratio * range);
 
         if (Math.abs(selectedValue - rent[0]) < Math.abs(selectedValue - rent[1])) {

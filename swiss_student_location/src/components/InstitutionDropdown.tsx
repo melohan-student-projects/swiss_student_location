@@ -1,11 +1,14 @@
 import React, {useState} from "react";
-import {Dropdown, DropdownChangeParams} from 'primereact/dropdown';
+import {Dropdown} from 'primereact/dropdown';
 import {Institution} from "../model/Institution";
 
-export default function InstitutionDropdown() {
+type InstitutionDropdownProps = {
+    onInstitutionChange: (institution: Institution | null) => void;
+};
+export default function InstitutionDropdown({ onInstitutionChange }: InstitutionDropdownProps) {
     const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
     const institutions: Institution[] = [
-        {name: 'CPNV', location: 'Ste-Croix'},
+        {name: 'CPNV', location: 'Sainte-Croix'},
         {name: 'HEIG-VD', location: 'Yverdon-les-Bains'},
         {name: 'EPFL', location: 'Lausanne'},
         {name: 'ETH Zurich', location: 'Zurich'},
@@ -21,22 +24,26 @@ export default function InstitutionDropdown() {
         {name: 'University of Lugano', location: 'Lugano'},
     ];
 
+    const handleChange = (e: { value: Institution | null }): void => {
+        const newInstitution = e.value as Institution;
+        setSelectedInstitution(newInstitution);
+        onInstitutionChange(newInstitution);
+    };
     const selectedInstitutionTemplate = (option: Institution, props: any) => {
         if (option) {
             return (
                 <div className="flex align-items-center">
-                    <div>{option.name} ({option.location})</div>
+                    <div>{option.name}</div>
                 </div>
             );
         }
-
         return <span>{props.placeholder}</span>;
     };
 
     const institutionOptionTemplate = (option: Institution) => {
         return (
             <div className="flex align-items-center">
-                <div>{option.name} ({option.location})</div>
+                <div>{option.name}</div>
             </div>
         );
     };
@@ -44,7 +51,7 @@ export default function InstitutionDropdown() {
     return (
         <div className="card flex justify-content-center">
             <Dropdown value={selectedInstitution}
-                      onChange={(e: DropdownChangeParams) => setSelectedInstitution(e.value as Institution)}
+                      onChange={handleChange}
                       options={institutions} optionLabel="name" placeholder="Select an Institution"
                       valueTemplate={selectedInstitutionTemplate} itemTemplate={institutionOptionTemplate}
                       className="w-full md:w-14rem"/>
