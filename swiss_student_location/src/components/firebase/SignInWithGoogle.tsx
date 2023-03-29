@@ -2,9 +2,12 @@ import {auth, googleProvider} from "@config/firebase";
 import {signInWithPopup} from "firebase/auth"
 import {useNavigate} from "react-router-dom";
 
+/**
+ * Google pop up sign in
+ * @constructor
+ */
 export const SignInWithGoogle = () => {
     let navigate = useNavigate();
-
 
     const signInWithGoogle = async () => {
         try {

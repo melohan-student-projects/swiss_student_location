@@ -16,6 +16,10 @@ const validationSchema = Yup.object().shape({
     password: Yup.string().required("Ce champ est obligatoire."),
 });
 
+/**
+ * Application default signIn
+ * @constructor
+ */
 export const SignIn = () => {
     const [errorMessage, setErrorMessage] = useState("");
     let navigate = useNavigate();

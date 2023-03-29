@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
-import {SignInWithGoogle} from "@components/firebase/signInWithGoogle";
-import {SignIn as SignInComponent} from "@components/firebase/signIn";
+import {SignInWithGoogle} from "@components/firebase/SignInWithGoogle";
+import {SignIn as SignInComponent} from "@components/firebase/SignIn";
 
 export default function SignIn() {
     return (

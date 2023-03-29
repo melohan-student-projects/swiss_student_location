@@ -1,20 +1,20 @@
-import RealStateApi from "../service/realstate-api";
-import {RealState} from "../model/RealState";
+import RealStateApi from "../services/realstate-api";
+import {RealState} from "../models/RealState";
 import {useEffect, useState} from "react";
-import Realstate from "@components/realstate";
+import Miniature from "@components/Miniature";
 import {Accordion, AccordionTab} from 'primereact/accordion';
-import OfferChecklist from "@components/offerChecklist";
-import CantonDropdown from "@components/cantonDropdown";
-import CityDropdown from "@components/cityDropdown";
-import InstitutionDropdown from "@components/InstitutionDropdown";
-import RoomSize from "@components/roomSize";
-import Rent from "@components/rent";
-import RealstateTypes from "@components/typeRealstate";
+import CriteriaChecklist from "@components/search/CriteriaChecklist";
+import CantonDropdown from "@components/search/CantonDropdown";
+import CityDropdown from "@components/search/CityDropdown";
+import InstitutionDropdown from "@components/search/InstitutionDropdown";
+import RoomSize from "@components/search/RoomSize";
+import Rent from "@components/search/Rent";
+import RealstateTypes from "@components/search/TypeRealstate";
 import {Button} from "primereact/button";
-import {Canton} from "../model/Canton";
-import {City} from "../model/City";
-import {Institution} from "../model/Institution";
-import {RealEstateType} from "../model/RealStateType";
+import {Canton} from "../models/Canton";
+import {City} from "../models/City";
+import {Institution} from "../models/Institution";
+import {RealEstateType} from "../models/RealStateType";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
@@ -136,7 +136,7 @@ export default function Home() {
                             <span className="vertical-align-middle text-gray-900">Critères déterminats</span>
                         </div>
                     }>
-                    <OfferChecklist onSelectedOffersChange={handleSelectedOffersChange}/>
+                    <CriteriaChecklist onSelectedOffersChange={handleSelectedOffersChange}/>
                 </AccordionTab>
             </Accordion>
             <div className="card flex flex-wrap px-2 py-5 -my-5 ">
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
 
             <section className="text-gray-600 body-font">
-                <Realstate realState={realStates}/>
+                <Miniature realState={realStates}/>
             </section>
         </div>
     );

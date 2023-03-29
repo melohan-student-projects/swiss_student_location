@@ -4,7 +4,13 @@ import {Checkbox} from 'primereact/checkbox';
 interface Props {
     onSelectedOffersChange: (selectedOffers: string[]) => void;
 }
-export default function OfferChecklist({onSelectedOffersChange}: Props) {
+
+/**
+ * Checklist of criterias
+ * @param onSelectedOffersChange
+ * @constructor
+ */
+export default function CriteriaChecklist({onSelectedOffersChange}: Props) {
     const offerList = [
         {name: "Meublé", value: "furnished"},
         {name: "Cuisine équipées (cuisinière, réfrigérateur, etc)", value: "kitchen_equipped"},
@@ -16,7 +22,6 @@ export default function OfferChecklist({onSelectedOffersChange}: Props) {
         {name: "Place de parking", value: "parking_available"},
         {name: "Animaux de compagnie accepté", value: "pets"},
         {name: "Accessibilité (pour personne à mobilité réduite)", value: "accessibility"}
-
     ]
     const [selectedOffers, setSelectedOffers] = useState<string[]>([]);
 
@@ -32,6 +37,7 @@ export default function OfferChecklist({onSelectedOffersChange}: Props) {
         setSelectedOffers(updatedOffers);
         onSelectedOffersChange(updatedOffers);
     };
+
     return (
         <div className="card">
             <div className="flex flex-wrap justify-content-center gap-3 text-gray-600">

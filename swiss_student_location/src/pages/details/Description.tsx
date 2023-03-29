@@ -1,7 +1,12 @@
 import React from "react";
-import {RealState} from "../model/RealState";
+import {RealState} from "@models/RealState";
 
-export function ApartmentDescription({apartment}: { apartment: RealState }) {
+/**
+ * This is description section of the search page.
+ * @param apartment
+ * @constructor
+ */
+export function Description({apartment}: { apartment: RealState }) {
     return <div className="flex flex-col lg:flex-row justify-between p-3 mr-7 border-gray-200 border-t-2">
         <div className="flex flex-col pt-3">
             <h2 className="text-gray-900 text-xl font-medium title-font">Description</h2>

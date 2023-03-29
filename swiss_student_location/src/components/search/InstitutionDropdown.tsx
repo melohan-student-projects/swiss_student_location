@@ -1,10 +1,17 @@
 import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
-import {Institution} from "../model/Institution";
+
+import {Institution} from "@models/Institution";
 
 type InstitutionDropdownProps = {
     onInstitutionChange: (institution: Institution | null) => void;
 };
+
+/**
+ * Dropdown of institutions
+ * @param onInstitutionChange
+ * @constructor
+ */
 export default function InstitutionDropdown({ onInstitutionChange }: InstitutionDropdownProps) {
     const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
     const institutions: Institution[] = [
@@ -52,7 +59,7 @@ export default function InstitutionDropdown({ onInstitutionChange }: Institution
         <div className="card flex justify-content-center text-gray-600">
             <Dropdown value={selectedInstitution}
                       onChange={handleChange}
-                      options={institutions} optionLabel="name" placeholder="Select an Institution"
+                      options={institutions} optionLabel="name" placeholder="Etablissement"
                       valueTemplate={selectedInstitutionTemplate} itemTemplate={institutionOptionTemplate}
                       className="w-full md:w-14rem"/>
         </div>
