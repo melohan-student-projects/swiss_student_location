@@ -24,6 +24,7 @@ export default function Home() {
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
     const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
     const [type, setType] = useState<RealEstateType[] | null>(null);
+    const [selectedOffers, setSelectedOffers] = useState<string[]>([]);
     const [filterRealStates, setFilterRealStates] = useState<string>("");
     let filter: any = []
     const realStatesApi = new RealStateApi();
@@ -40,6 +41,9 @@ export default function Home() {
     const handleCantonChange = (canton: Canton | null): void => {
         setSelectedCanton(canton);
     };
+    const handleSelectedOffersChange = (selectedOffers: string[]) => {
+        setSelectedOffers(selectedOffers);
+    };
     const handleInstitutionChange = (institution: Institution | null): void => {
         setSelectedInstitution(institution);
     };
@@ -51,7 +55,7 @@ export default function Home() {
     function handleSearch() {
         filter = []
         const [minRent, maxRent] = rent;
-        if (minRent < maxRent) filter.push(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
+        if (minRent < maxRent && minRent != 200 && maxRent !=4000) filter.push(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
         if (rooms) filter.push(`rental_properties.rooms_gte=${rooms}`)
         if (selectedCanton) filter.push(`address.canton=${selectedCanton.name}`)
         if (selectedCity) filter.push(`address.city=${selectedCity.name}`)
@@ -59,6 +63,11 @@ export default function Home() {
         if (type) {
             type.forEach((t) => {
                 filter.push(`rental_properties.type=${t.name.toLowerCase()}`)
+            })
+        }
+        if(selectedOffers.length > 0) {
+            selectedOffers.forEach((o) => {
+                filter.push(`rental_properties.${o}=true`)
             })
         }
         if (filter) {
@@ -128,7 +137,7 @@ export default function Home() {
                             <span className="vertical-align-middle">Critères déterminats</span>
                         </div>
                     }>
-                    <OfferChecklist/>
+                    <OfferChecklist onSelectedOffersChange={handleSelectedOffersChange}/>
                 </AccordionTab>
             </Accordion>
             <div className="card flex flex-wrap px-2 py-5 -my-5">
