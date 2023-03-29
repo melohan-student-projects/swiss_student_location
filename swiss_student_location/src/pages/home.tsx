@@ -11,22 +11,33 @@ import RoomSize from "@components/roomSize";
 import Rent from "@components/rent";
 import RealstateTypes from "@components/typeRealstate";
 import {Button} from "primereact/button";
+import {Canton} from "../model/Canton";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
+    const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
     const [filterRealStates, setFilterRealStates] = useState<string>("");
+    let filter:any = []
     const realStatesApi = new RealStateApi();
 
     const handleRentChange = (newRent: [number, number]) => {
         setRent(newRent);
     };
 
+    const handleCantonChange = (canton: Canton | null): void => {
+        setSelectedCanton(canton);
+    };
+
     function handleSearch() {
+        filter = []
         const [minRent, maxRent] = rent;
-        if (minRent < maxRent) {
-            setFilterRealStates(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
+        if (minRent < maxRent) filter.push(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
+        if (selectedCanton) filter.push(`address.canton=${selectedCanton.name}`)
+        if (filter) {
+            setFilterRealStates(filter.join('&'))
         }
+        console.log(filter)
     }
 
     useEffect(() => {
@@ -54,7 +65,7 @@ export default function Home() {
                     <div className="flex flex-wrap justify-content-center gap-3">
                         <div className="text-1xl pt-3 flex flex-row">
                             <h3 className="text-1xl p-3 ">Dans le canton de .. </h3>
-                            <CantonDropdown/>
+                            <CantonDropdown onCantonChange={handleCantonChange}/>
                         </div>
                         <div className="text-1xl pt-3 flex flex-row">
                             <h3 className="text-1xl p-3">Dans la ville/le village de ..</h3>

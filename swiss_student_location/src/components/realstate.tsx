@@ -25,7 +25,7 @@ export default function Realstate({realState}: { realState: RealState[] }) {
                                     <p className="leading-relaxed mb-3">{realState.rental_properties.description}</p>
                                     <div className="flex sm:flex-row align-items-center justify-between gap-3 sm:gap-2">
                                         <span
-                                            className="text-2xl font-semi-bold">${realState.rental_properties.rent}</span>
+                                            className="text-2xl font-semi-bold text-red-700 font-medium">{realState.rental_properties.rent}.-</span>
                                         <Button icon="pi pi-bookmark-fill" className="p-button-rounded"
                                                 disabled={realState.rental_properties.status !== 'available'}>
                                         </Button>

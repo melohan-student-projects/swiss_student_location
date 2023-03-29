@@ -2,7 +2,11 @@ import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 import {Canton} from "../model/Canton";
 
-export default function CantonDropdown() {
+type CantonDropdownProps = {
+    onCantonChange: (canton: Canton | null) => void;
+};
+
+export default function CantonDropdown({ onCantonChange }: CantonDropdownProps) {
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
     const cantons: Canton[] = [
         {name: 'Aargau', code: 'AG'},
@@ -32,9 +36,17 @@ export default function CantonDropdown() {
         {name: 'Zug', code: 'ZG'},
         {name: 'Zürich', code: 'ZH'}
     ];
+
+    const handleChange = (e: { value: Canton | null }): void => {
+        const newCanton = e.value;
+        setSelectedCanton(newCanton);
+        onCantonChange(newCanton);
+    };
+
+
     return (
         <div className="card flex justify-content-center">
-            <Dropdown value={selectedCanton} onChange={(e) => setSelectedCanton(e.value)} options={cantons}
+            <Dropdown value={selectedCanton} onChange={handleChange} options={cantons}
                       optionLabel="name"
                       editable placeholder="Select a Canton" className="w-full md:w-14rem"/>
         </div>
