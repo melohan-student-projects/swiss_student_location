@@ -32,6 +32,6 @@ export default function RealstateTypesRealstateTypes({ onTypeChange }: Realstate
                      }}
                      options={realEstateTypes} display="chip" optionLabel="name"
                      placeholder="Sélectionner un type de bien immobilier" maxSelectedLabels={3}
-                     className="w-full md:w-20rem"/>
+                     className="w-full md:w-20rem text-gray-600"/>
     );
 }

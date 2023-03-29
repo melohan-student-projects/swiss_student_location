@@ -34,7 +34,7 @@ export default function OfferChecklist({onSelectedOffersChange}: Props) {
     };
     return (
         <div className="card">
-            <div className="flex flex-wrap justify-content-center gap-3">
+            <div className="flex flex-wrap justify-content-center gap-3 text-gray-600">
                 {offerList.map((offer, index) => (
                     <div key={index} className="flex align-items-center w-1/3">
                         <Checkbox
