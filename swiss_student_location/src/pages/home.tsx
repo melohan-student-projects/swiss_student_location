@@ -89,26 +89,25 @@ export default function Home() {
     }, [filterRealStates]);
 
     return (
-        <div>
-            <h1>Bienvenue sur Swiss Student Location !</h1>
+        <div className="p-4">
             <Accordion multiple activeIndex={0}>
                 <AccordionTab
                     header={
                         <div className="text-gray-900 pl-5 text-2xl mb-1 rounded-lg p-3 -mb-1 font-medium title-font">
-                            <span className="vertical-align-middle">Zone géographique</span>
+                            <span className="vertical-align-middle text-gray-900">Zone géographique</span>
                         </div>
                     }>
                     <div className="flex flex-wrap justify-content-center gap-3">
                         <div className="text-1xl pt-3 flex flex-row">
-                            <h3 className="text-1xl p-3 ">Dans le canton de .. </h3>
+                            <h3 className="text-1xl p-3 text-gray-600">Dans le canton de .. </h3>
                             <CantonDropdown onCantonChange={handleCantonChange}/>
                         </div>
                         <div className="text-1xl pt-3 flex flex-row">
-                            <h3 className="text-1xl p-3">Dans la ville/le village de ..</h3>
+                            <h3 className="text-1xl p-3 text-gray-600">Dans la ville/le village de ..</h3>
                             <CityDropdown onCityChange={handleCityChange}/>
                         </div>
                         <div className="text-1xl pt-3 flex flex-row">
-                            <h3 className="text-1xl p-3">A proximité du .. .. </h3>
+                            <h3 className="text-1xl p-3 text-gray-600">A proximité du .. .. </h3>
                             <InstitutionDropdown onInstitutionChange={handleInstitutionChange}/>
                         </div>
                     </div>
@@ -116,16 +115,16 @@ export default function Home() {
                 <AccordionTab
                     header={
                         <div className="text-gray-900 pl-5 text-2xl mb-1 rounded-lg p-3 -mb-1 font-medium title-font">
-                            <span className="vertical-align-middle">Bien immobilier</span>
+                            <span className="vertical-align-middle text-gray-900">Bien immobilier</span>
                         </div>
                     }>
                     <div className="flex flex-row justify-content-start gap-3">
                         <div className="text-1xl flex flex-row">
-                            <h3 className="font-bold block mb-2 p-3 ">Type de bien immobilier</h3>
+                            <h3 className="font-semi-bold block mb-2 p-3 text-gray-600">Type de bien immobilier</h3>
                             <RealstateTypes onTypeChange={handleTypeChange}/>
                         </div>
                         <div className="text-1xl flex flex-row">
-                            <h3 className="font-bold block mb-2 p-3">Taille de la chambre</h3>
+                            <h3 className="font-semi-bold block mb-2 p-3 text-gray-600">Taille de la chambre</h3>
                             <RoomSize onRoomSizeChange={handleRoomSizeChange}/>
                         </div>
                     </div>
@@ -134,14 +133,14 @@ export default function Home() {
                 <AccordionTab
                     header={
                         <div className="text-gray-900 pl-5 text-2xl mb-1 rounded-lg p-3 -mb-1 font-medium title-font">
-                            <span className="vertical-align-middle">Critères déterminats</span>
+                            <span className="vertical-align-middle text-gray-900">Critères déterminats</span>
                         </div>
                     }>
                     <OfferChecklist onSelectedOffersChange={handleSelectedOffersChange}/>
                 </AccordionTab>
             </Accordion>
-            <div className="card flex flex-wrap px-2 py-5 -my-5">
-                <Button className="flex mx-auto mt-3 border-0 py-2.5 px-8 focus:outline-none rounded text-lg"
+            <div className="card flex flex-wrap px-2 py-5 -my-5 ">
+                <Button className="flex mx-auto mt-3 border-0 py-2.5 px-8 focus:outline-none bg-primaryColor rounded-lg text-lg"
                         label='Chercher' icon="pi pi-check" onClick={handleSearch}>
                 </Button>
             </div>

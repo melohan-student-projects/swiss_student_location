@@ -16,7 +16,7 @@ export function ApartmentDescription({apartment}: { apartment: RealState }) {
             </p>
             <div className="my-3">
                 <button
-                    className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                    className="inline-flex text-white bg-primaryColor border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
                     Contact
                 </button>
             </div>

@@ -30,8 +30,8 @@ export default function Rent({ onRentChange }: ChildComponentProps) {
 
     return (
 
-        <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-5">
-            <div className="font-bold block mb-2 p-3">Loyer</div>
+        <div className="card flex flex-row justify-content-start gap-5 align-items-center pt-5 text-gray-600">
+            <div className="font-semi-bold block mb-2 p-3">Loyer</div>
             <div>
                 <div className="w-14rem" onClick={handleClick}>
                     <Slider
@@ -47,7 +47,7 @@ export default function Rent({ onRentChange }: ChildComponentProps) {
                     {`${rent[0]} CHF (min.)  - ${rent[1]}CHF (max.)`}
                 </div>
             </div>
-            <div className="font-bold block mb-2 p-3">Charges inclus dans le loyer</div>
+            <div className="font-semi-bold block mb-2 p-3">Charges inclus dans le loyer</div>
         </div>
     );
 }

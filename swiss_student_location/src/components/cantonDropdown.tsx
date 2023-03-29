@@ -45,7 +45,7 @@ export default function CantonDropdown({ onCantonChange }: CantonDropdownProps) 
 
 
     return (
-        <div className="card flex justify-content-center">
+        <div className="card flex justify-content-center text-gray-600">
             <Dropdown value={selectedCanton} onChange={handleChange} options={cantons}
                       optionLabel="name"
                       editable placeholder="Select a Canton" className="w-full md:w-14rem"/>

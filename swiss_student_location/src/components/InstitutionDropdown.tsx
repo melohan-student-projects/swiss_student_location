@@ -49,7 +49,7 @@ export default function InstitutionDropdown({ onInstitutionChange }: Institution
     };
 
     return (
-        <div className="card flex justify-content-center">
+        <div className="card flex justify-content-center text-gray-600">
             <Dropdown value={selectedInstitution}
                       onChange={handleChange}
                       options={institutions} optionLabel="name" placeholder="Select an Institution"

@@ -58,7 +58,7 @@ export default function CityDropdown({ onCityChange }: CityDropdownProps) {
         );
     };
     return (
-        <div className="card flex justify-content-center">
+        <div className="card flex justify-content-center text-gray-600">
             <div className="card flex justify-content-center">
                 <Dropdown value={selectedCity} onChange={handleChange}
                           options={cities} optionLabel="name" placeholder="Select a City"
