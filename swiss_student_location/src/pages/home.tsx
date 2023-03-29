@@ -13,12 +13,14 @@ import RealstateTypes from "@components/typeRealstate";
 import {Button} from "primereact/button";
 import {Canton} from "../model/Canton";
 import {City} from "../model/City";
+import {Institution} from "../model/Institution";
 
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
+    const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
     const [filterRealStates, setFilterRealStates] = useState<string>("");
     let filter:any = []
     const realStatesApi = new RealStateApi();
@@ -32,6 +34,10 @@ export default function Home() {
     const handleCantonChange = (canton: Canton | null): void => {
         setSelectedCanton(canton);
     };
+    const handleInstitutionChange = (institution: Institution | null): void => {
+        setSelectedInstitution(institution);
+    };
+
 
     function handleSearch() {
         filter = []
@@ -39,6 +45,7 @@ export default function Home() {
         if (minRent < maxRent) filter.push(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
         if (selectedCanton) filter.push(`address.canton=${selectedCanton.name}`)
         if (selectedCity) filter.push(`address.city=${selectedCity.name}`)
+        if (selectedInstitution) filter.push(`address.city=${selectedInstitution.location}`)
         if (filter) {
             setFilterRealStates(filter.join('&'))
         }
@@ -77,8 +84,8 @@ export default function Home() {
                             <CityDropdown onCityChange={handleCityChange}/>
                         </div>
                         <div className="text-1xl pt-3 flex flex-row">
-                            <h3 className="text-1xl p-3">Dans le quartier de .. </h3>
-                            <InstitutionDropdown/>
+                            <h3 className="text-1xl p-3">A proximité du .. .. </h3>
+                            <InstitutionDropdown onInstitutionChange={handleInstitutionChange}/>
                         </div>
                     </div>
                 </AccordionTab>
