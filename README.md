@@ -63,8 +63,9 @@ pnpm install
 
 ### Run
 
-1. To ensure the project runs properly, it is necessary to start a JSON server in the backend. Please refer to the [Fake API](https://github.com/melohan/swiss_student_location/wiki/4-Fake-API) documentation.
-2. Run the project:
+1. To ensure the project runs properly, it is necessary to follow the instruction of this our [backend repository](The backend of our project is a FakeAPI (a JSON server).
+   https://github.com/melohan/api_swiss_student_location).
+2. Once you have cloned and run the JSON server you can run the project:
    ```shell
    pnpm run dev
    ```
@@ -81,9 +82,6 @@ pnpm run test
 
 
 ## Project directory structure
-
-> Please refer to [configuration file](https://github.com/melohan/swiss_student_location/wiki/3-Configuration-files)
-for the description of the JavaScript configuration files
 
 
 ```shell
@@ -156,6 +154,7 @@ This project uses the following technologies:
 - [Formik](https://formik.org/docs/overview)
 - [React Router](https://reacttraining.com/blog/react-router-v6-pre)
 - [TailwindCSS](https://flowbite.com/docs/getting-started/quickstart/)
+- [Babel](https://babeljs.io/docs/config-files)
 
 ## Licence
 
