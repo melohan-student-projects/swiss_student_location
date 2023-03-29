@@ -18,6 +18,7 @@ import {Institution} from "../model/Institution";
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
+    const [rooms, setRooms] = useState<number | null>(1.5);
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
     const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
@@ -27,6 +28,9 @@ export default function Home() {
 
     const handleRentChange = (newRent: [number, number]) => {
         setRent(newRent);
+    };
+    const handleRoomSizeChange = (rooms: number | null): void => {
+        setRooms(rooms);
     };
     const handleCityChange = (city: City | null): void => {
         setSelectedCity(city);
@@ -43,6 +47,7 @@ export default function Home() {
         filter = []
         const [minRent, maxRent] = rent;
         if (minRent < maxRent) filter.push(`rental_properties.rent_lte=${maxRent}&rental_properties.rent_gte=${minRent}`)
+        if (rooms) filter.push(`rental_properties.rooms_gte=${rooms}`)
         if (selectedCanton) filter.push(`address.canton=${selectedCanton.name}`)
         if (selectedCity) filter.push(`address.city=${selectedCity.name}`)
         if (selectedInstitution) filter.push(`address.city=${selectedInstitution.location}`)
@@ -102,7 +107,7 @@ export default function Home() {
                         </div>
                         <div className="text-1xl flex flex-row">
                             <h3 className="font-bold block mb-2 p-3">Taille de la chambre</h3>
-                            <RoomSize/>
+                            <RoomSize onRoomSizeChange={handleRoomSizeChange}/>
                         </div>
                     </div>
                     <Rent onRentChange={handleRentChange}/>
