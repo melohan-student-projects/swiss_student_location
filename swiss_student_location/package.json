@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "firebase": "^9.17.1",
+    "formik": "^2.x",
+    "formik-yup": "^0.0.5",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primereact": "^9.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
-    "vite-tsconfig-paths": "^4.0.5"
+    "vite-tsconfig-paths": "^4.0.5",
+    "yup": "^0.28.5"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
