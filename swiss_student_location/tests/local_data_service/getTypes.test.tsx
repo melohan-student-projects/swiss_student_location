@@ -1,14 +1,14 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import ApiService from "../src/services/ApiService";
+import LocalDataService from "@services/LocalDataService";
 
 
 test('getTypes_nominalCase_returnsArray', async () => {
     // given
-    const api = new ApiService();
+    const localData = new LocalDataService();
 
     // when
-    const types = await api.getTypes();
+    const types = await localData.getTypes();
 
     // then
     expect(types).toBeDefined();
@@ -17,10 +17,10 @@ test('getTypes_nominalCase_returnsArray', async () => {
 
 test('getTypes_containsExpectedData_success', async () => {
     // given
-    const api = new ApiService();
+    const localData = new LocalDataService();
 
     // when
-    const types = await api.getTypes();
+    const types = await localData.getTypes();
     const type1 = types.find(type => type.name === 'Appartement');
     const type2 = types.find(type => type.name === 'Studio');
     const type3 = types.find(type => type.name === 'Villa');

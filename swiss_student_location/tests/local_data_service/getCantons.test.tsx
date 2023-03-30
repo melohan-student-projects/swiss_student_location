@@ -1,14 +1,14 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import ApiService from "../src/services/ApiService";
+import LocalDataService from "@services/LocalDataService";
 
 
 test('getCantons_nominalCase_returnsArray', async () => {
     // given
-    const api = new ApiService();
+    const localData = new LocalDataService();
 
     // when
-    const cantons = await api.getCantons();
+    const cantons = await localData.getCantons();
 
     // then
     expect(cantons).toBeDefined();
@@ -17,10 +17,10 @@ test('getCantons_nominalCase_returnsArray', async () => {
 
 test('getCantons_containsExpectedData_success', async () => {
     // given
-    const api = new ApiService();
+    const localData = new LocalDataService();
 
     // when
-    const cantons = await api.getCantons();
+    const cantons = await localData.getCantons();
 
     // then
     expect(cantons[0].name).toBe("Aargau");

@@ -28,6 +28,7 @@
       "@pages/*": ["src/pages/*"],
       "@models/*": ["src/models/*"],
       "@services/*": ["src/services/*"],
+      "@data/*": ["src/data/*"]
     },
     "incremental": true
   },

@@ -1,6 +1,6 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import RealEstateApi from "../src/services/ApiService";
+import RealEstateApi from "@services/ApiService";
 
 test('getRealEstates_nominalCase_returnsArray', async () => {
     //given

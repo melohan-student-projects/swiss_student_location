@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Checkbox} from 'primereact/checkbox';
-import ApiService from "@services/ApiService";
+import LocalDataService from "@services/LocalDataService";
 import {RealEstateCriteria} from "@models/RealEstateCriteria";
 
 /**
@@ -10,8 +10,9 @@ interface Props {
     onSelectedOffersChange: (selectedOffers: string[]) => void;
 }
 
-const realStatesApi = new ApiService();
-const criteria: RealEstateCriteria[] = await realStatesApi.getCriteria()
+const localData = new LocalDataService();
+const criteria: RealEstateCriteria[] = await localData.getCriteria()
+
 /**
  * Checklist of criterias
  * @param onSelectedOffersChange

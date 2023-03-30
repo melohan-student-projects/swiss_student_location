@@ -1,14 +1,14 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import ApiService from "../src/services/ApiService";
+import LocalDataService from "@services/LocalDataService";
 
 
 test('getCriteria_nominalCase_success', async () => {
     // given
-    const api = new ApiService();
+    const localData = new LocalDataService();
 
     // when
-    const criteria = await api.getCriteria();
+    const criteria = await localData.getCriteria();
 
     // then
     expect(criteria).toBeDefined();
@@ -17,10 +17,10 @@ test('getCriteria_nominalCase_success', async () => {
 
 test('getCriteria_containsExpectedCriteria_success', async () => {
     // given
-    const api = new ApiService();
+    const localData = new LocalDataService();
 
     // when
-    const criteria = await api.getCriteria();
+    const criteria = await localData.getCriteria();
     const singleCriteria = criteria.find(criteria => criteria.name === 'Meublé');
 
     // then
