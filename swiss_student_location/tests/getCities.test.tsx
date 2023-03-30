@@ -1,10 +1,10 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import RealStateApi from "../src/services/realstate-api";
+import ApiService from "../src/services/ApiService";
 
 test('getCities_nominalCase_success', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const cities = await api.getCities();
@@ -16,7 +16,7 @@ test('getCities_nominalCase_success', async () => {
 
 test('getCity_containsExpectedCity_success', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const cities = await api.getCities();
@@ -29,7 +29,7 @@ test('getCity_containsExpectedCity_success', async () => {
 
 test('getCities_containsExpectedCity_success', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const cities = await api.getCities();
@@ -43,7 +43,7 @@ test('getCities_containsExpectedCity_success', async () => {
 
 test('getCities_containsExpectedNpa_success', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const cities = await api.getCities();

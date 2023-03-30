@@ -1,11 +1,11 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import RealStateApi from "../src/services/realstate-api";
+import ApiService from "../src/services/ApiService";
 
 
 test('getCantons_nominalCase_returnsArray', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const cantons = await api.getCantons();
@@ -17,7 +17,7 @@ test('getCantons_nominalCase_returnsArray', async () => {
 
 test('getCantons_containsExpectedData_success', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const cantons = await api.getCantons();

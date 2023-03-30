@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 
 import {Institution} from "@models/Institution";
-import RealStateApi from "@services/realstate-api";
+import ApiService from "@services/ApiService";
 
 /**
  * Props of InstitutionDropdown
@@ -10,7 +10,7 @@ import RealStateApi from "@services/realstate-api";
 type InstitutionDropdownProps = {
     onInstitutionChange: (institution: Institution | null) => void;
 };
-const realStatesApi = new RealStateApi();
+const realStatesApi = new ApiService();
 const institutions: Institution[] = await realStatesApi.getInstitutions()
 
 /**

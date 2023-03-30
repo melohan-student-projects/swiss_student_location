@@ -4,7 +4,7 @@
     "value": "furnished"
   },
   {
-    "name": "Cuisine équipées (cuisinière, réfrigérateur, etc)",
+    "name": "Cuisine équipée (cuisinière, réfrigérateur, etc)",
     "value": "kitchen_equipped"
   },
   {
@@ -12,7 +12,7 @@
     "value": "bathroom_private"
   },
   {
-    "name": "Baundrie",
+    "name": "Buanderie",
     "value": "laundry"
   },
   {

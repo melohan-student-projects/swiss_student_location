@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Checkbox} from 'primereact/checkbox';
-import RealStateApi from "@services/realstate-api";
-import {Criteria} from "@models/Criteria";
+import ApiService from "@services/ApiService";
+import {RealEstateCriteria} from "@models/RealEstateCriteria";
 
 /**
  * Props of CriteriaChecklist
@@ -10,8 +10,8 @@ interface Props {
     onSelectedOffersChange: (selectedOffers: string[]) => void;
 }
 
-const realStatesApi = new RealStateApi();
-const criteria: Criteria[] = await realStatesApi.getCriterias()
+const realStatesApi = new ApiService();
+const criteria: RealEstateCriteria[] = await realStatesApi.getCriteria()
 /**
  * Checklist of criterias
  * @param onSelectedOffersChange

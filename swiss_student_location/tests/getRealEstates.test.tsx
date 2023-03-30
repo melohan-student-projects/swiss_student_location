@@ -1,13 +1,13 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import RealStateApi from "../src/services/realstate-api";
+import RealEstateApi from "../src/services/ApiService";
 
 test('getRealEstates_nominalCase_returnsArray', async () => {
     //given
-    const api = new RealStateApi();
+    const api = new RealEstateApi();
 
     // when
-    const realStates = await api.getRealStates();
+    const realStates = await api.getRealEstates();
 
     // then
     expect(realStates).toBeDefined();
@@ -16,15 +16,15 @@ test('getRealEstates_nominalCase_returnsArray', async () => {
 
 test('getRealEstateById_nominalCase_returnsArray', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new RealEstateApi();
     const id = 1;
 
     // when
-    const realState = await api.getRealStateById(id);
+    const realEstate = await api.getRealEstateById(id);
 
     // then
-    expect(realState).toBeDefined();
-    expect(typeof realState).toBe('object');
-    expect(realState.id).toBe(id);
+    expect(realEstate).toBeDefined();
+    expect(typeof realEstate).toBe('object');
+    expect(realEstate.id).toBe(id);
 });
 
