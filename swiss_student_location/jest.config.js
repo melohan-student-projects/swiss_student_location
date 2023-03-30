@@ -1,6 +1,7 @@
+let module;
 module.exports = {
     testMatch: ['**/tests/**/*.test.(ts|tsx|js)', '**/integration-tests/**/*.test.(ts|tsx|js)'],
-    preset: 'ts-jest',
+    preset: 'vite-ts-jest',
     testEnvironment: 'jsdom',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     moduleNameMapper: {
