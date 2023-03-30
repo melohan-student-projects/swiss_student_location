@@ -15,6 +15,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": [
+      "node",
+      "vite",
+      "@types/jest",
+    ],
     "paths": {
       "@components/*": ["src/components/*"],
       "@config/*": ["src/config/*"],
@@ -26,6 +31,8 @@
     },
     "incremental": true
   },
-  "include": ["src"],
+  "include": ["src",
+    "setupTests.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
