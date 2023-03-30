@@ -1,14 +1,13 @@
-export default class RealStateApi {
+export default class ApiService {
+
     /**
      * Get all real states
      */
-    public async getRealStates(): Promise<any> {
-        console.log('http://localhost:3000/realestates')
+    public async getRealEstates(): Promise<any> {
         try {
             const response = await fetch('http://localhost:3000/realestates');
             return await response.json();
         } catch (error) {
-            console.error(error);
             return [];
         }
     }
@@ -17,27 +16,24 @@ export default class RealStateApi {
      * Get real state by id
      * @param id
      */
-    public async getRealStateById(id: number): Promise<any> {
+    public async getRealEstateById(id: number): Promise<any> {
         try {
             const response = await fetch('http://localhost:3000/realestates/' + id);
             return await response.json();
         } catch (error) {
-            console.error(error);
             return {};
         }
     }
 
     /**
      * Get real states filtered
-     * @param filterRealStates
+     * @param filterRealEstates
      */
-    public async getRealStatesFiltered(filterRealStates: String) {
-        console.log('http://localhost:3000/realestates/?' + filterRealStates)
+    public async getRealEstatesFiltered(filterRealEstates: String) {
         try {
-            const response = await fetch('http://localhost:3000/realestates/?' + filterRealStates);
+            const response = await fetch('http://localhost:3000/realestates/?' + filterRealEstates);
             return await response.json();
         } catch (error) {
-            console.error(error);
             return {};
         }
     }
@@ -50,7 +46,6 @@ export default class RealStateApi {
             const response = await fetch('http://localhost:3000/cantons');
             return await response.json();
         } catch (error) {
-            console.error(error);
             return [];
         }
     }
@@ -63,7 +58,6 @@ export default class RealStateApi {
             const response = await fetch('http://localhost:3000/cities');
             return await response.json();
         } catch (error) {
-            console.error(error);
             return [];
         }
     }
@@ -71,25 +65,23 @@ export default class RealStateApi {
     /**
      * Get all criteria
      */
-    public async getCriterias(): Promise<any> {
+    public async getCriteria(): Promise<any> {
         try {
             const response = await fetch('http://localhost:3000/criterias');
             return await response.json();
         } catch (error) {
-            console.error(error);
             return [];
         }
     }
 
     /**
-     * Get all institutions
+     * Get all institutions/schools
      */
     public async getInstitutions(): Promise<any> {
         try {
             const response = await fetch('http://localhost:3000/institutions');
             return await response.json();
         } catch (error) {
-            console.error(error);
             return [];
         }
     }
@@ -102,7 +94,6 @@ export default class RealStateApi {
             const response = await fetch('http://localhost:3000/types');
             return await response.json();
         } catch (error) {
-            console.error(error);
             return [];
         }
     }

@@ -2,7 +2,7 @@ import {Button} from "primereact/button";
 import {Image} from 'primereact/image';
 import {Link} from "react-router-dom";
 
-import {RealState} from "@/models/RealState";
+import {RealState} from "@/models/RealEstate";
 
 /**
  * Miniature of a realestate

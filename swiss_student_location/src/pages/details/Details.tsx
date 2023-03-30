@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
-import {RealState} from "@models/RealState";
+import {RealEstate} from "@models/RealEstate";
 
-import RealStateApi from "@services/realstate-api";
+import ApiService from "@services/ApiService";
 import Apartment from "@pages/details/Apartment";
 import '@assets/style/detail.css'
 
@@ -11,7 +11,7 @@ import '@assets/style/detail.css'
  */
 export default function Details() {
 
-    const [apartment, setApartment] = useState<RealState | null>(null);
+    const [apartment, setApartment] = useState<RealEstate | null>(null);
     const [id, setId] = useState<number>(0);
 
     // Allow to navigate between realestate by url
@@ -25,8 +25,8 @@ export default function Details() {
      */
     useEffect(() => {
         if (id < 0) return;
-        const realStatesApi = new RealStateApi();
-        realStatesApi.getRealStateById(id).then((realStates: RealState) => {
+        const realStatesApi = new ApiService();
+        realStatesApi.getRealEstateById(id).then((realStates: RealEstate) => {
             setApartment(realStates);
         });
     }, [id]);

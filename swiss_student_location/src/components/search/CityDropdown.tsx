@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 import {City} from "@models/City";
-import RealStateApi from "@services/realstate-api";
+import ApiService from "@services/ApiService";
 
 /**
  * Props of CityDropdown
@@ -9,7 +9,7 @@ import RealStateApi from "@services/realstate-api";
 type CityDropdownProps = {
     onCityChange: (city: City | null) => void;
 };
-const realStatesApi = new RealStateApi();
+const realStatesApi = new ApiService();
 const cities: City[] = await realStatesApi.getCities();
 /**
  * Drop down of cities.

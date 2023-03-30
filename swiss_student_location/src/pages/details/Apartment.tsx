@@ -1,13 +1,13 @@
 import {Description} from '@pages/details/Description';
 import ImageCarousel from "@components/ImageCarousel";
-import {RealState} from "@models/RealState";
+import {RealEstate} from "@models/RealEstate";
 
 /**
  * This is the top section of the search page.
  * @param apartment
  * @constructor
  */
-export default function Apartment({apartment}: { apartment: RealState }) {
+export default function Apartment({apartment}: { apartment: RealEstate }) {
     return (
         <>
             <h2 className="pl-5 text-2xl mb-1 bg-gray-100 text-gray-900 rounded-lg p-3 -mb-1 font-medium title-font">{apartment.rental_properties.description}</h2>

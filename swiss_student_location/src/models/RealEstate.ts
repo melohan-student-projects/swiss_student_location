@@ -1,4 +1,4 @@
-export interface RealState {
+export interface RealEstate {
     id: number;
     advertisement: {
         contact: string;

@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import {Image} from 'primereact/image';
 
-import {RealState} from "@models/RealState";
-import RealStateApi from "../services/realstate-api";
+import {RealEstate} from "@models/RealEstate";
+import ApiService from "@services/ApiService";
 
 /**
  * Carousel of a details page
@@ -20,8 +20,8 @@ export default function ImageCarousel() {
      */
     useEffect(() => {
         if (url !== "" && !isNaN(parseInt(url!))) {
-            const realStatesApi = new RealStateApi();
-            realStatesApi.getRealStateById(parseInt(url!)).then((realState: RealState) => {
+            const realStatesApi = new ApiService();
+            realStatesApi.getRealEstateById(parseInt(url!)).then((realState: RealEstate) => {
                 setImages(realState.photos);
             });
         }

@@ -1,5 +1,5 @@
-import RealStateApi from "../services/realstate-api";
-import {RealState} from "../models/RealState";
+import ApiService from "@services/ApiService";
+import {RealEstate} from "@models/RealEstate";
 import {useEffect, useState} from "react";
 import Miniature from "@components/Miniature";
 import {Accordion, AccordionTab} from 'primereact/accordion';
@@ -13,7 +13,7 @@ import RealstateTypes from "@components/search/TypeRealstate";
 import {Button} from "primereact/button";
 import {Canton} from "../models/Canton";
 import {City} from "../models/City";
-import {Institution} from "../models/Institution";
+import {Institution} from "@models/Institution";
 import {RealEstateType} from "../models/RealStateType";
 
 /**
@@ -21,7 +21,7 @@ import {RealEstateType} from "../models/RealStateType";
  * @constructor
  */
 export default function Home() {
-    const [realStates, setRealStates] = useState<RealState[]>([]);
+    const [realStates, setRealStates] = useState<RealEstate[]>([]);
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
     const [rooms, setRooms] = useState<number | null>(1.5);
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
@@ -31,7 +31,7 @@ export default function Home() {
     const [selectedOffers, setSelectedOffers] = useState<string[]>([]);
     const [filterRealStates, setFilterRealStates] = useState<string>("");
     let filter: any = []
-    const realStatesApi = new RealStateApi();
+    const realStatesApi = new ApiService();
 
 
     const handleRentChange = (newRent: [number, number]) => {
@@ -102,11 +102,11 @@ export default function Home() {
      */
     useEffect(() => {
         if (filterRealStates) {
-            realStatesApi.getRealStatesFiltered(filterRealStates).then((data) => {
+            realStatesApi.getRealEstatesFiltered(filterRealStates).then((data) => {
                 setRealStates(data);
             });
         } else {
-            realStatesApi.getRealStates().then((data) => {
+            realStatesApi.getRealEstates().then((data) => {
                 setRealStates(data);
             });
         }

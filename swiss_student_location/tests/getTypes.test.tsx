@@ -1,11 +1,11 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import RealStateApi from "../src/services/realstate-api";
+import ApiService from "../src/services/ApiService";
 
 
 test('getTypes_nominalCase_returnsArray', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const types = await api.getTypes();
@@ -17,7 +17,7 @@ test('getTypes_nominalCase_returnsArray', async () => {
 
 test('getTypes_containsExpectedData_success', async () => {
     // given
-    const api = new RealStateApi();
+    const api = new ApiService();
 
     // when
     const types = await api.getTypes();

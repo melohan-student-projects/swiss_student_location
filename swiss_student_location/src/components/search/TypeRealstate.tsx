@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {MultiSelect, MultiSelectChangeEvent} from 'primereact/multiselect';
 
 import {RealEstateType} from "@models/RealStateType";
-import RealStateApi from "@services/realstate-api";
+import ApiService from "@services/ApiService";
 
 /**
  *  Props of RealstateTypes
@@ -11,7 +11,7 @@ interface RealstateTypesProps {
     onTypeChange: (selectedTypes: RealEstateType[] | null) => void;
 }
 
-const realStatesApi = new RealStateApi();
+const realStatesApi = new ApiService();
 const realEstateTypes: RealEstateType[] = await realStatesApi.getTypes();
 
 export default function RealstateTypesRealstateTypes({onTypeChange}: RealstateTypesProps) {
