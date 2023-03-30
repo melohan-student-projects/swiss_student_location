@@ -5,7 +5,7 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,8 +14,25 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": [
+      "node",
+      "vite",
+      "@types/jest",
+    ],
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@config/*": ["src/config/*"],
+      "@utils/*": ["src/utils/*"],
+      "@assets/*": ["src/assets/*"],
+      "@pages/*": ["src/pages/*"],
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
+    },
+    "incremental": true
   },
-  "include": ["src"],
+  "include": ["src",
+    "setupTests.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

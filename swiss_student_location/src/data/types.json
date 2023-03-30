@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Studio",
+    "code": "STU"
+  },
+  {
+    "name": "Appartement",
+    "code": "APP"
+  },
+  {
+    "name": "Colocation",
+    "code": "COL"
+  },
+  {
+    "name": "Chambre étudiante",
+    "code": "CHA"
+  },
+  {
+    "name": "Maison",
+    "code": "MAI"
+  },
+  {
+    "name": "Villa",
+    "code": "VIL"
+  },
+  {
+    "name": "Terrain",
+    "code": "TER"
+  },
+  {
+    "name": "1-bedroom",
+    "code": "1B"
+  },
+  {
+    "name": "2-bedroom",
+    "code": "2B"
+  },
+  {
+    "name": "3-bedroom",
+    "code": "3B"
+  },
+  {
+    "name": "4-bedroom",
+    "code": "4B"
+  },
+  {
+    "name": "5-bedroom",
+    "code": "5B"
+  }
+]

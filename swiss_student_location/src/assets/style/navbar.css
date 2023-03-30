@@ -1,0 +1,38 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar_container {
+    height: 75px;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px
+}
+
+.navbar_container > * {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo {
+    height: auto;
+    width: 100px;
+}
+
+.navbar_link {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.navbar_link:hover {
+    font-size: 2.1rem;
+}

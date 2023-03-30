@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Meublé",
+    "value": "furnished"
+  },
+  {
+    "name": "Cuisine équipée (cuisinière, réfrigérateur, etc)",
+    "value": "kitchen_equipped"
+  },
+  {
+    "name": "Salle de Bain privée",
+    "value": "bathroom_private"
+  },
+  {
+    "name": "Buanderie",
+    "value": "laundry"
+  },
+  {
+    "name": "Internet à haut débit",
+    "value": "internet"
+  },
+  {
+    "name": "Balcon / terasse",
+    "value": "balcony"
+  },
+  {
+    "name": "Cave à disposition",
+    "value": "cellar"
+  },
+  {
+    "name": "Place de parking",
+    "value": "parking_available"
+  },
+  {
+    "name": "Animaux de compagnie accepté",
+    "value": "pets"
+  },
+  {
+    "name": "Accessibilité (pour personne à mobilité réduite)",
+    "value": "accessibility"
+  }
+]
