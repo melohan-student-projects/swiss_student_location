@@ -13,6 +13,7 @@
     "firebase": "^9.17.1",
     "formik": "^2.x",
     "formik-yup": "^0.0.5",
+    "jsonfile": "^6.1.0",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primereact": "^9.2.1",

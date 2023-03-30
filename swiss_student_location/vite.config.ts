@@ -10,4 +10,32 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  resolve: {
+    alias: [
+      {
+        find: '@components',
+        replacement: '/src/components'
+      },
+      {
+        find: '@config',
+        replacement: '/src/config'
+      },
+      {
+        find: '@utils',
+        replacement: '/src/utils'
+      },
+      {
+        find: '@assets',
+        replacement: '/src/assets'
+      },
+      {
+        find: '@pages',
+        replacement: '/src/pages'
+      },
+      {
+        find: '@services',
+        replacement: '/src/services'
+      }
+    ]
+  }
 });
