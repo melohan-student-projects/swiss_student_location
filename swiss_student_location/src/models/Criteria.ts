@@ -1,4 +1,4 @@
-export interface Canton {
+export interface Criteria {
     name: string;
-    code: string;
+    value: string;
 }
