@@ -3,35 +3,30 @@ import {expect} from "vitest";
 import RealStateApi from "../src/services/realstate-api";
 
 
-test('getTypes', async () => {
+test('getTypes_nominalCase_returnsArray', async () => {
+    // given
     const api = new RealStateApi();
+
+    // when
     const types = await api.getTypes();
 
+    // then
     expect(types).toBeDefined();
     expect(Array.isArray(types)).toBe(true);
 });
-//test for the type name appartement to be in the object using give when then
-test('getTypeByName', async () => {
-    const api = new RealStateApi();
-    const types = await api.getTypes();
-    const type = types.find(type => type.name === 'Appartement');
-    expect(type).toBeDefined();
-    expect(type?.name).toBe('Appartement');
-});
 
-//test for the type name Studio to be in the object using give when then
-test('getTypeByName', async () => {
+test('getTypes_containsExpectedData_success', async () => {
+    // given
     const api = new RealStateApi();
+
+    // when
     const types = await api.getTypes();
-    const type = types.find(type => type.name === 'Studio');
-    expect(type).toBeDefined();
-    expect(type?.name).toBe('Studio');
-});
-//test for the type name Villa to be in the object using give when then
-test('getTypeByName', async () => {
-    const api = new RealStateApi();
-    const types = await api.getTypes();
-    const type = types.find(type => type.name === 'Villa');
-    expect(type).toBeDefined();
-    expect(type?.name).toBe('Villa');
+    const type1 = types.find(type => type.name === 'Appartement');
+    const type2 = types.find(type => type.name === 'Studio');
+    const type3 = types.find(type => type.name === 'Villa');
+
+    // then
+    expect(type1?.name).toBe('Appartement');
+    expect(type2?.name).toBe('Studio');
+    expect(type3?.name).toBe('Villa');
 });
