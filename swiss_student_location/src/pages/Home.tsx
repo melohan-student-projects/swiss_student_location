@@ -148,7 +148,7 @@ export default function Home() {
                             <RealstateTypes onTypeChange={handleTypeChange}/>
                         </div>
                         <div className="text-1xl flex flex-row">
-                            <h3 className="font-semi-bold block mb-2 p-3 text-gray-600">Taille de la chambre</h3>
+                            <h3 className="font-semi-bold block mb-2 p-3 text-gray-600">Nombre de pièces</h3>
                             <RoomSize onRoomSizeChange={handleRoomSizeChange}/>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ export default function Home() {
                 <AccordionTab
                     header={
                         <div className="text-gray-900 pl-5 text-2xl mb-1 rounded-lg p-3 -mb-1 font-medium title-font">
-                            <span className="vertical-align-middle text-gray-900">Critères déterminats</span>
+                            <span className="vertical-align-middle text-gray-900">Critères déterminants</span>
                         </div>
                     }>
                     <CriteriaChecklist onSelectedOffersChange={handleSelectedOffersChange}/>

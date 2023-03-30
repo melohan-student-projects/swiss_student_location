@@ -16,7 +16,7 @@ test('getCantons', async () => {
     const cantons = await api.getCantons();
 
     expect(cantons[0].name).toBe("Aargau");
-})
+}   )
 
 //test for the last canton name in the list to be Zürich
 test('getCantons', async () => {
