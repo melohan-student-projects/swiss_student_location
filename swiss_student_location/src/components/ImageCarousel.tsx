@@ -15,6 +15,9 @@ export default function ImageCarousel() {
     const [visible, setVisible] = useState<boolean>(false);
 
     const url = window.location.href.split("/").pop();
+    /**
+     * Get real state by id
+     */
     useEffect(() => {
         if (url !== "" && !isNaN(parseInt(url!))) {
             const realStatesApi = new RealStateApi();

@@ -1,6 +1,10 @@
 import '@assets/style/NotFound404.css'
 import {Link} from "react-router-dom";
 
+/**
+ *  404 page
+ * @constructor
+ */
 export default function NotFound404() {
     return (
         <div>

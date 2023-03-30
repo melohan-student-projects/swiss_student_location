@@ -16,6 +16,10 @@ import {City} from "../models/City";
 import {Institution} from "../models/Institution";
 import {RealEstateType} from "../models/RealStateType";
 
+/**
+ * Home page
+ * @constructor
+ */
 export default function Home() {
     const [realStates, setRealStates] = useState<RealState[]>([]);
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
@@ -28,6 +32,7 @@ export default function Home() {
     const [filterRealStates, setFilterRealStates] = useState<string>("");
     let filter: any = []
     const realStatesApi = new RealStateApi();
+
 
     const handleRentChange = (newRent: [number, number]) => {
         setRent(newRent);
@@ -92,6 +97,9 @@ export default function Home() {
         console.log(filter)
     }
 
+    /**
+     * Get all real states
+     */
     useEffect(() => {
         if (filterRealStates) {
             realStatesApi.getRealStatesFiltered(filterRealStates).then((data) => {

@@ -14,6 +14,10 @@ import NotFound404 from "@pages/NotFound404";
 import Layout from "@pages/Layout";
 import Details from '@pages/details/Details';
 
+/**
+ *
+ * @constructor
+ */
 export default function App() {
     return (
         <BrowserRouter>

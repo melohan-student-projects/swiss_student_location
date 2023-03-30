@@ -3,6 +3,9 @@ import {Checkbox} from 'primereact/checkbox';
 import RealStateApi from "@services/realstate-api";
 import {Criteria} from "@models/Criteria";
 
+/**
+ * Props of CriteriaChecklist
+ */
 interface Props {
     onSelectedOffersChange: (selectedOffers: string[]) => void;
 }
@@ -17,6 +20,10 @@ const criteria: Criteria[] = await realStatesApi.getCriterias()
 export default function CriteriaChecklist({onSelectedOffersChange}: Props) {
     const [selectedCriteria, setSelectedCriteria] = useState<string[]>([]);
 
+    /**
+     * Handle change of offer
+     * @param e
+     */
     const onOfferChange = (e: { checked: boolean; value: string }) => {
         let updatedOffers = [...selectedCriteria];
 

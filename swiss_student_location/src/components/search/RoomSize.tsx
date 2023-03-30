@@ -4,9 +4,12 @@ import {InputNumber, InputNumberValueChangeEvent} from 'primereact/inputnumber';
 type RoomSizeProps = {
     onRoomSizeChange: (rooms: number | null) => void;
 };
-export default function RoomSize({ onRoomSizeChange }: RoomSizeProps) {
+export default function RoomSize({onRoomSizeChange}: RoomSizeProps) {
     const [rooms, setRooms] = useState<number | null>(1.5);
-
+    /**
+     *  Handle change of room size
+     * @param e
+     */
     const handleChange = (e: InputNumberValueChangeEvent): void => {
         if (e.value !== null && e.value !== undefined) {
             setRooms(e.value);

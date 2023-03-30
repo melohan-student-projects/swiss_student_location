@@ -4,10 +4,16 @@ import {Dropdown} from 'primereact/dropdown';
 import {Canton} from "@models/Canton";
 import RealStateApi from "@services/realstate-api";
 
+/**
+ * Props of CantonDropdown
+ */
 type CantonDropdownProps = {
     onCantonChange: (canton: Canton | null) => void;
 };
 
+/**
+ * Get all cantons
+ */
 const realStatesApi = new RealStateApi();
 const cantons: Canton[] = await realStatesApi.getCantons();
 
@@ -19,6 +25,10 @@ const cantons: Canton[] = await realStatesApi.getCantons();
 export default function CantonDropdown({onCantonChange}: CantonDropdownProps) {
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null);
 
+    /**
+     * Handle change of canton
+     * @param e
+     */
     const handleChange = (e: { value: Canton | null }): void => {
         const newCanton = e.value;
         setSelectedCanton(newCanton);

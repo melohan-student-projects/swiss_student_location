@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import {Slider} from "primereact/slider";
 
+/**
+ * Props of Rent component
+ */
 type ChildComponentProps = {
     onRentChange: (newRent: [number, number]) => void;
 };
@@ -13,13 +16,19 @@ type ChildComponentProps = {
 export default function Rent({ onRentChange }: ChildComponentProps) {
     const [rent, setRent] = useState<[number, number]>([200, 4000]);
 
-
+    /**
+     * Handle change of rent
+     * @param e
+     */
     const handleChange = (e: any) => {
         const newRent = e.value;
         setRent(newRent);
         onRentChange(newRent);
     };
-
+    /**
+     * Handle click on the slider
+     * @param e
+     */
     const handleClick = (e: any) => {
         const {left, width} = e.target.getBoundingClientRect();
         const newValue = e.clientX - left;

@@ -4,6 +4,9 @@ import {Dropdown} from 'primereact/dropdown';
 import {Institution} from "@models/Institution";
 import RealStateApi from "@services/realstate-api";
 
+/**
+ * Props of InstitutionDropdown
+ */
 type InstitutionDropdownProps = {
     onInstitutionChange: (institution: Institution | null) => void;
 };
@@ -18,11 +21,20 @@ const institutions: Institution[] = await realStatesApi.getInstitutions()
 export default function InstitutionDropdown({onInstitutionChange}: InstitutionDropdownProps) {
     const [selectedInstitution, setSelectedInstitution] = useState<Institution | null>(null);
 
+    /**
+     * Handle change of institution
+     * @param e
+     */
     const handleChange = (e: { value: Institution | null }): void => {
         const newInstitution = e.value as Institution;
         setSelectedInstitution(newInstitution);
         onInstitutionChange(newInstitution);
     };
+    /**
+     * Template of selected institution
+     * @param option
+     * @param props
+     */
     const selectedInstitutionTemplate = (option: Institution, props: any) => {
         if (option) {
             return (

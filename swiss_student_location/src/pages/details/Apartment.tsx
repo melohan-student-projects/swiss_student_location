@@ -1,6 +1,6 @@
 import {Description} from '@pages/details/Description';
-import {RealState} from "@models/RealStateType";
 import ImageCarousel from "@components/ImageCarousel";
+import {RealState} from "@models/RealState";
 
 /**
  * This is the top section of the search page.

@@ -3,6 +3,9 @@ import {Dropdown} from 'primereact/dropdown';
 import {City} from "@models/City";
 import RealStateApi from "@services/realstate-api";
 
+/**
+ * Props of CityDropdown
+ */
 type CityDropdownProps = {
     onCityChange: (city: City | null) => void;
 };
@@ -16,6 +19,11 @@ const cities: City[] = await realStatesApi.getCities();
 export default function CityDropdown({onCityChange}: CityDropdownProps) {
     const [selectedCity, setSelectedCity] = useState<City | null>(null);
 
+    /**
+     * Template of selected city
+     * @param option
+     * @param props
+     */
     const selectedCityTemplate = (option: City, props: any) => {
         if (option) {
             return (

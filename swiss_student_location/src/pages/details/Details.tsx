@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {RealState} from "@models/RealState";
 
-import RealStateApi from "../../services/realstate-api";
+import RealStateApi from "@services/realstate-api";
 import Apartment from "@pages/details/Apartment";
 import '@assets/style/detail.css'
 
@@ -20,7 +20,9 @@ export default function Details() {
         setId(parseInt(url!));
     }
 
-
+    /**
+     * Get the realstate by id
+     */
     useEffect(() => {
         if (id < 0) return;
         const realStatesApi = new RealStateApi();
