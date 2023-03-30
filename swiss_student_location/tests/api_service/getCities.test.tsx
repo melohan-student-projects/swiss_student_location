@@ -1,6 +1,6 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import ApiService from "../src/services/ApiService";
+import ApiService from "../../src/services/ApiService";
 
 test('getCities_nominalCase_success', async () => {
     // given
