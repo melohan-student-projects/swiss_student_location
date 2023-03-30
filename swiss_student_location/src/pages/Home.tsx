@@ -51,7 +51,23 @@ export default function Home() {
         setType(selectedTypes);
     }
 
+    /**
+     * Reset all filters
+     */
+    function handleReset() {
+        setRent([200, 4000]);
+        setRooms(1.5);
+        setSelectedCanton(null);
+        setSelectedCity(null);
+        setSelectedInstitution(null);
+        setType(null);
+        setSelectedOffers([]);
+        setFilterRealStates("");
+    }
 
+    /**
+     * Filter real states
+     */
     function handleSearch() {
         filter = []
         const [minRent, maxRent] = rent;
@@ -142,6 +158,9 @@ export default function Home() {
             <div className="card flex flex-wrap px-2 py-5 -my-5 ">
                 <Button className="flex mx-auto mt-3 border-0 py-2.5 px-8 focus:outline-none bg-primaryColor rounded-lg text-lg"
                         label='Chercher' icon="pi pi-check" onClick={handleSearch}>
+                </Button>
+                <Button className="flex mx-auto mt-3 ml-4 border-0 py-2.5 px-8 focus:outline-none bg-red-600 rounded-lg text-lg"
+                        label="Reset" icon="pi pi-times" onClick={handleReset}>
                 </Button>
             </div>
 
