@@ -60,7 +60,6 @@ export default class ApiService {
         }
     }
 
-
     /**
      * Get all institutions/schools
      * @return Promise<any>
