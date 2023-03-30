@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 import {City} from "@models/City";
-import RealStateApi from "../../services/realstate-api";
+import RealStateApi from "@services/realstate-api";
 
 type CityDropdownProps = {
     onCityChange: (city: City | null) => void;

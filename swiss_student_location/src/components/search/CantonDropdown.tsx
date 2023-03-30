@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 
 import {Canton} from "@models/Canton";
-import RealStateApi from "../../services/realstate-api";
+import RealStateApi from "@services/realstate-api";
 
 type CantonDropdownProps = {
     onCantonChange: (canton: Canton | null) => void;

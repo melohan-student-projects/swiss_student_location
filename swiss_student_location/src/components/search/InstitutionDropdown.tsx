@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 
 import {Institution} from "@models/Institution";
-import RealStateApi from "../../services/realstate-api";
-import {Criteria} from "../../models/Criteria";
+import RealStateApi from "@services/realstate-api";
 
 type InstitutionDropdownProps = {
     onInstitutionChange: (institution: Institution | null) => void;

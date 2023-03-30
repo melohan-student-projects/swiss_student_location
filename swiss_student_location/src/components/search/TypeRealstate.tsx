@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {MultiSelect, MultiSelectChangeEvent} from 'primereact/multiselect';
 
 import {RealEstateType} from "@models/RealStateType";
-import RealStateApi from "../../services/realstate-api";
+import RealStateApi from "@services/realstate-api";
 
 interface RealstateTypesProps {
     onTypeChange: (selectedTypes: RealEstateType[] | null) => void;

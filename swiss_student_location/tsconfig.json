@@ -20,7 +20,9 @@
       "@config/*": ["src/config/*"],
       "@utils/*": ["src/utils/*"],
       "@assets/*": ["src/assets/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
     },
     "incremental": true
   },

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Checkbox} from 'primereact/checkbox';
-import RealStateApi from "../../services/realstate-api";
-import {Criteria} from "../../models/Criteria";
+import RealStateApi from "@services/realstate-api";
+import {Criteria} from "@models/Criteria";
 
 interface Props {
     onSelectedOffersChange: (selectedOffers: string[]) => void;
