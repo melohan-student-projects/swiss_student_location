@@ -1,0 +1,58 @@
+[
+  {
+    "name": "CPNV",
+    "location": "Sainte-Croix"
+  },
+  {
+    "name": "HEIG-VD",
+    "location": "Yverdon-les-Bains"
+  },
+  {
+    "name": "EPFL",
+    "location": "Lausanne"
+  },
+  {
+    "name": "ETH Zurich",
+    "location": "Zurich"
+  },
+  {
+    "name": "University of Basel",
+    "location": "Basel"
+  },
+  {
+    "name": "University of Bern",
+    "location": "Bern"
+  },
+  {
+    "name": "University of Geneva",
+    "location": "Geneva"
+  },
+  {
+    "name": "University of Lausanne",
+    "location": "Lausanne"
+  },
+  {
+    "name": "University of Lucerne",
+    "location": "Lucerne"
+  },
+  {
+    "name": "University of Neuchâtel",
+    "location": "Neuchâtel"
+  },
+  {
+    "name": "University of St. Gallen",
+    "location": "St. Gallen"
+  },
+  {
+    "name": "University of Zurich",
+    "location": "Zurich"
+  },
+  {
+    "name": "University of Fribourg",
+    "location": "Fribourg"
+  },
+  {
+    "name": "University of Lugano",
+    "location": "Lugano"
+  }
+]
