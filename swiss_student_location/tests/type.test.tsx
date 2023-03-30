@@ -34,4 +34,4 @@ test('getTypeByName', async () => {
     const type = types.find(type => type.name === 'Villa');
     expect(type).toBeDefined();
     expect(type?.name).toBe('Villa');
-}
+});
