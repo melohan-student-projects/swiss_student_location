@@ -39,7 +39,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link to={'/signup'} className={'navbar_link'}>
-                            <Button label="Sign up"
+                            <Button label="Inscription"
                                     className="text-white bg-primaryColor border-0 hover:bg-blue-400 p-button-lg px-4 py-3 flex items-center transition duration-150 ease-in-out"/>
                         </Link>
                     </li>
