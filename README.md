@@ -92,7 +92,8 @@ pnpm run test
 ├── package.json
 ├── pnpm-lock.yaml
 ├── postcss.config.cjs
-├── public│   
+├── public
+├── setupTests.ts
 ├── src
 │   ├── assets
 │   ├── components
@@ -104,12 +105,11 @@ pnpm run test
 │   ├── services
 │   └── vite-env.d.ts
 ├── tailwind.config.cjs
-├── tests
-│   ├── components
-│   └── pages
+├── tests 
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+
 ```
 
 
