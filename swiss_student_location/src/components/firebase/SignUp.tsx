@@ -80,7 +80,7 @@ export const SignUp = () => {
                     Mot de passe
                 </label>
                 <input
-                    className={`text-sm bg-white appearance-none rounded w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline h-10 ${
+                    className={`text-sm appearance-none rounded w-full py-2 px-3 text-gray-700 bg-gray-200  mb-1 leading-tight focus:outline-none focus:shadow-outline h-10 ${
                         formik.touched.password && formik.errors.password ? "border-red-800" : ""
                     }`}
                     id="password"
@@ -100,7 +100,7 @@ export const SignUp = () => {
                     Répétez votre mot de passe
                 </label>
                 <input
-                    className={`text-sm appearance-none rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline h-10 ${
+                    className={`text-sm appearance-none rounded w-full py-2 px-3 text-gray-700 bg-gray-200  leading-tight focus:outline-none focus:shadow-outline h-10 ${
                         formik.touched.passwordConfirm && formik.errors.passwordConfirm ? "border-red-800" : ""
                     }`}
                     id="passwordConfirm"

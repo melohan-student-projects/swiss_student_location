@@ -6,10 +6,11 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import '@assets/style/index.css'
+
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "@pages/Home";
-import SignUp from "@pages/users/signUp";
-import SignIn from "@pages/users/signIn";
+import SignUp from "@pages/users/SignUp";
+import SignIn from "@pages/users/SignIn";
 import NotFound404 from "@pages/NotFound404";
 import Layout from "@pages/Layout";
 import Details from '@pages/details/Details';

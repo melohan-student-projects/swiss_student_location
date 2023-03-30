@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import {Dropdown} from 'primereact/dropdown';
 
 import {Canton} from "@models/Canton";
-import ApiService from "@services/ApiService";
+import LocalDataService from "@services/LocalDataService";
+
 
 /**
  * Props of CantonDropdown
@@ -11,11 +12,9 @@ type CantonDropdownProps = {
     onCantonChange: (canton: Canton | null) => void;
 };
 
-/**
- * Get all cantons
- */
-const realStatesApi = new ApiService();
-const cantons: Canton[] = await realStatesApi.getCantons();
+
+const localData = new LocalDataService();
+const cantons: Canton[] = await localData.getCantons();
 
 /**
  * Drop down of Canton

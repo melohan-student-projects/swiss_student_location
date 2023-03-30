@@ -1,6 +1,6 @@
 import { test } from 'vitest';
 import {expect} from "vitest";
-import ApiService from "../src/services/ApiService";
+import ApiService from "@services/ApiService";
 
 test('getInstitutions_nominalCase_returnsArray', async () => {
     // given

@@ -73,7 +73,7 @@ Then open your browser and navigate to http://localhost:5173 to see the applicat
 
 ### Testing
 
-The test framework for this project is [Jest](https://jestjs.io/docs/tutorial-react)
+The test framework for this project is [Vitest](https://vitest.dev/)
 Execute the following command to run the tests
 
 ```sh
@@ -109,7 +109,6 @@ pnpm run test
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
-
 ```
 
 
@@ -118,7 +117,7 @@ pnpm run test
 | jest.config.js      | Configuration file for Jest (testing framework)               |
 | src/assets          | Contains static files such as images, videos, fonts, etc.     |
 | src/components      | Directory of reusable React components                        |
-| src/config          | Contains the configuration for Firebase                       |
+| src/config          | Contains the configuration for Firebase and API URL           |
 | src/data            | Contains JSON data used in forms                              |
 | src/model           | Contains data models                                          |
 | src/pages           | React components for each page of the application             |
